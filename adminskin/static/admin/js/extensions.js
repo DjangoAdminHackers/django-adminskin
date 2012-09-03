@@ -32,6 +32,9 @@
         
         /* Add id to search button */
         $('#changelist-search input[type="submit"]').attr('id', 'search-submit');
+        
+        /* Add new features link to admin */
+        $('#user-tools').append('<a href="/features/">New features</a>');
     });
     
 })(django.jQuery);
