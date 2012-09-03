@@ -10,9 +10,9 @@ import sys
 name = 'django-adminskin'
 package = 'adminskin'
 description = ''
-url = 'http://github.com/.../.../'
-author = ''
-author_email = ''
+url = 'http://github.com/DjangoAdminHackers/django-adminskin.git'
+author = 'Links Creative'
+author_email = 'info@linkscreative.co.uk'
 license = 'BSD'
 install_requires = []
 

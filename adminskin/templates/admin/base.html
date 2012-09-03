@@ -1,0 +1,16 @@
+{% extends "admin:admin/base.html" %}
+{% load staticfiles %}
+{% load compress %}
+
+{% block extrahead %}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	{% compress css %}
+	<link rel="stylesheet" type="text/x-scss" href="{% static "admin/scss/override.scss" %}" />
+	{% endcompress %}
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{% block blockbots %}
+	<script type="text/javascript" src="{% static "admin/js/extensions.js" %}"></script>
+	{{ block.super }}
+{% endblock %}

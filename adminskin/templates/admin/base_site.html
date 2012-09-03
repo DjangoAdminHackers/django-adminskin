@@ -1,0 +1,8 @@
+{% extends "admin:admin/base_site.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'Example Project' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'Example Project' %}</h1>
+{% endblock %}
