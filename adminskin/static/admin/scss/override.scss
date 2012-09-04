@@ -6,6 +6,8 @@ $brand: #007BBC;
 $light: #FFF;           /*  distictive brand colour */
 $link: #0079C2;             /*  text link colour */
 $link-hover: #005682;       /*  text link hover colour */
+$feature-link: #C1680F;             /*  text link colour */
+$feature-link-hover: #AF5E0C;       /*  text link hover colour */
 $text-on-brand: $light;       /*  text on the brand colour */
 $link-on-brand: $light;       /*  text link on the brand */
 $background: #F3F3F3;       /*  site background colour */
@@ -142,6 +144,11 @@ a {
     #user-tools {
         right: 15px;
         font-size: 1.1em;
+        a.features-link {
+            color: $feature-link;
+            &:link, &:active, &:active, &:visited {color: $feature-link;}
+            &:hover {color: $feature-link-hover;}
+        }
     }
     a {
         color: $link;
