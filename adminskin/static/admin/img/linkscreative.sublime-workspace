@@ -1,0 +1,639 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"backgr",
+				"background-position"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"Fo",
+				"ForeignKey"
+			],
+			[
+				"for",
+				"ForeignKey"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"L",
+				"L"
+			],
+			[
+				"P",
+				"Probability"
+			],
+			[
+				"contact",
+				"contact-form"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"background",
+				"background"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"backgroun",
+				"background"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"FFF",
+				"FFF"
+			],
+			[
+				"nav",
+				"primary-nav"
+			],
+			[
+				"brand",
+				"brand-color"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"l",
+				"list-style-image"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"block",
+				"blockquote"
+			],
+			[
+				"things",
+				"things-to-do"
+			],
+			[
+				"projct",
+				"project_pipeline"
+			],
+			[
+				"C",
+				"CharField"
+			],
+			[
+				"c",
+				"company_number"
+			],
+			[
+				"T",
+				"TextField"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"django",
+				"Set Syntax: HTML (Django)"
+			],
+			[
+				"html",
+				"Set Syntax: HTML (Django)"
+			],
+			[
+				"djang",
+				"Set Syntax: HTML (Django)"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"html d",
+				"Set Syntax: HTML (Django)"
+			],
+			[
+				"html djan",
+				"Set Syntax: HTML (Django)"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"add f",
+				"Project: Add Folder"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 494.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/django/qrs/password_reset/templates/password_reset/recovery_email_subject.txt",
+		"/Applications/MAMP/htdocs/django/qrs/password_reset/templates/password_reset/recovery_email.txt",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/notifications/instrument-register-successful.md",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/login.html",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/sign_up_2.html",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/sign_up_3.html",
+		"/Applications/MAMP/htdocs/django/qrs/instruments/forms.py",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/dashboard.html",
+		"/Applications/MAMP/htdocs/django/qrs/instruments/templates/instruments/view.html",
+		"/Applications/MAMP/htdocs/django/qrs/instruments/views.py",
+		"/Applications/MAMP/htdocs/django/qrs/instruments/templates/instruments/instruments.html",
+		"/Applications/MAMP/htdocs/django/qrs/help/templates/help/faqs.html",
+		"/Applications/MAMP/htdocs/django/qrs/customers/management/commands/testnotifications.py",
+		"/Applications/MAMP/htdocs/django/qrs/customers/fixtures/initial_data.yaml",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/notifications/account-details-change.md",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/notifications/account-admins-change.md",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/notifications/base/email_hteqa_subject.txt",
+		"/Applications/MAMP/htdocs/django/qrs/password_reset/tests/__init__.py",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/notifications/instrument-renew-success-nonuk.md",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/notifications/instrument-renew-success-uk.md",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/notifications/run-material-not-received-90.md",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/notifications/run-material-received.md",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/notifications/run-material-requested-nonuk.md",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/notifications/run-material-requested-uk.html",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/notifications/run-report-published.md",
+		"/Applications/MAMP/htdocs/django/qrs/password_reset/templates/password_reset/base.html",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/notifications/account-register-success.md",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/notifications/instrument-alias-change.md",
+		"/Applications/MAMP/htdocs/django/qrs/password_reset/templates/password_reset/recovery_done.html",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/templates/base.html",
+		"/Applications/MAMP/htdocs/django/qrs/reports/templates/reports/includes/latest.html",
+		"/Applications/MAMP/htdocs/django/qrs/reports/templates/reports/report.html",
+		"/Applications/MAMP/htdocs/django/qrs/instruments/templates/instruments/register.html",
+		"/Applications/MAMP/htdocs/django/qrs/instruments/templates/instruments/renew.html",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/static/sass/_instruments.scss",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/static/sass/_general.scss",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/static/sass/_report.scss",
+		"/Applications/MAMP/htdocs/django/qrs/reports/templates/reports/reports.html",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/static/sass/styles.scss",
+		"/Applications/MAMP/htdocs/django/qrs/help/templates/help/includes/faqs.html",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/static/stylesheets/styles.css",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/sign_up_1.html",
+		"/Applications/MAMP/htdocs/django/qrs/customers/forms.py",
+		"/Applications/MAMP/htdocs/django/qrs/locale/de/LC_MESSAGES/django.po",
+		"/Applications/MAMP/htdocs/django/qrs/password_reset/templates/password_reset/reset_sent.html",
+		"/Applications/MAMP/htdocs/django/qrs/password_reset/templates/password_reset/recovery_form.html",
+		"/Applications/MAMP/htdocs/django/qrs/password_reset/templates/password_reset/reset.html",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/static/sass/_notifications.scss",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/account.html",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/notifications.html",
+		"/Applications/MAMP/htdocs/django/qrs/help/views.py",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/settings/local.py",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/settings/dev_jharvey.py",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/gallery.php",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/js/plugins.js",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/includes/scripts.html",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/js/main.js",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/sass/screen.scss",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/sass/_general.scss",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/galleries.php",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/includes/head.html",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/sass/_gallery.scss",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/css/chosen.css",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/sass/_chosen.scss",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/image.php",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/sass/_image.scss",
+		"/Applications/MAMP/htdocs/cascade/wp-content/themes/Hipstar/_presets/style-1/style.css",
+		"/Applications/MAMP/htdocs/cascade/wp-content/themes/Hipstar/woocommerce/loop-event.php",
+		"/Applications/MAMP/htdocs/cascade/wp-content/themes/Hipstar/woocommerce/single-product/add-to-cart/grouped.php",
+		"/Applications/MAMP/htdocs/cascade/wp-content/themes/Hipstar/_js/search.js",
+		"/Applications/MAMP/htdocs/django/qrs/instruments/models.py",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/templates/includes/messages.html",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/static/javascripts/main.js",
+		"/Applications/MAMP/htdocs/django/qrs/customers/templates/customers/includes/faqs.html",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/templates/includes/faqs.html",
+		"/Applications/MAMP/htdocs/django/qrs/locale/fr/LC_MESSAGES/django.po",
+		"/Applications/MAMP/htdocs/django/lms/lms/templates/dashboard.html",
+		"/Applications/MAMP/htdocs/django/lms/lms/templates/base.html",
+		"/Applications/MAMP/htdocs/django/lms/project_pipeline/context_processors.py",
+		"/Applications/MAMP/htdocs/django/lms/lms/settings.py",
+		"/Applications/MAMP/htdocs/django/lms/pipeline/models.py",
+		"/Applications/MAMP/htdocs/django/lms/pipeline/admin.py",
+		"/Applications/MAMP/htdocs/django/lms/project_pipeline/admin.py",
+		"/Applications/MAMP/htdocs/django/lms/pipeline/context_processors.py",
+		"/Applications/MAMP/htdocs/django/lms/project_pipeline/models.py",
+		"/Applications/MAMP/htdocs/django/lms/lms/static/scss/styles.scss",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/sass/_find-us.scss",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/sass/_base.scss",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/sass/_basket.scss",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/sass/_prices.php",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/sass/_home.scss",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/sass/_galleries.scss",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/static/sass/_header.scss",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/static/sass/_login-and-registration.scss",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/static/sass/_dashboard.scss",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/scss/_general.scss",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/scss/main.scss",
+		"/Applications/MAMP/htdocs/lausdeo-fe/_wwwroot/scss/mixins.scss",
+		"/Applications/MAMP/htdocs/django/lms/requirements.txt",
+		"/Applications/MAMP/htdocs/driven2drive/_wwwroot/index.php",
+		"/Applications/MAMP/htdocs/django/qrs/qrs/models.py",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/less/main.less",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/index.php",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/properties.php",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/contact.php",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/about.php",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/property.php",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/js/plugins.js",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/corporate.php",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/includes/cart-overlay.php",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/includes/head.php",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/js/main.js",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/includes/footer.php",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/css/main.css",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/includes/fixed-buttons.php",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/reservation-request.php",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/includes/header-nav.php",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/includes/fixed-button.php",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/CONTRIBUTING.md",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/img/texture-overlap-dark_tileable.png",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/img/texture-overlap-dark_tilable.png",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/less/mixins.less",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/includes/property-header.php",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/less/chosen.less",
+		"/Users/James/.virtualenvs/qrs/bin/postactivate",
+		"/Users/James/Google Drive/Links Creative/Resources/Code/wordpress migration/matts-migration-script.txt",
+		"/Applications/MAMP/htdocs/reside/_wwwroot/includes/search-overlay.php",
+		"/Applications/MAMP/htdocs/driven2drive/_wwwroot/wp-content/themes/canvas/header.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Applications/MAMP/htdocs/driven2drive",
+			"/Applications/MAMP/htdocs/reside/_wwwroot",
+			"/Applications/MAMP/htdocs/resinbonded",
+			"/Applications/MAMP/htdocs/driven2drive",
+			"/Applications/MAMP/htdocs/django/bmg"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"account-pass",
+			"Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+			"phrase goes here",
+			"<dd class=\"",
+			" excellent-condition",
+			" alert-success",
+			"<dt>",
+			"<dl class=\"clearfix\">\n                    <dt>",
+			":</dt>",
+			"<dd>phrase goes here</dd>",
+			"<dl>",
+			"<dd>\n                        <ul>\n                            <li>phrase goes here</li>\n                            <li>phrase goes here</li>\n                        </ul>\n                    </dd>",
+			"    ",
+			"alert alert-info",
+			"url('",
+			"serial",
+			"main-nav",
+			"<table class=\"table\">\n<table class=\"table\">\n<table class=\"table\">\n<table class=\"table\">\n<table class=\"table\">",
+			"<table class=\"table\">",
+			"<table>",
+			"<section class=\"month\">",
+			"<tr>",
+			"<tr>\n					<td>{{ p.get_stage_display }}</td>",
+			"{% for p in projects_month0 %}\n				<tr>",
+			"<th class=\"est-profit\">Est. Profit</th>",
+			"<td>&pound;{{ p.net_income|intcomma }}</td>",
+			"<td>{{ p.get_stage_display }}</td>",
+			"<th class=\"stage\">Stage</th>",
+			"lass=\"chance",
+			"Chance</th>",
+			"Chance",
+			"get_probability_display",
+			"est-value",
+			"Est. Value",
+			"est_value",
+			"<a href=\"index.php\" id=\"header-logo\" title=\"\">reside</a>",
+			".cart-button",
+			".refine-search-button",
+			"<input",
+			" class=\"quarter\"",
+			" class=\"half\"",
+			"input",
+			"-   ",
+			"awards",
+			"<br class=\"mb\">",
+			"-   ",
+			"<h2><a href=\"\" title=\"\">Berlin Kurfurtendamm Apartments</a></h2>",
+			"<li>\n                    <div class=\"page-wrapper\">\n                        <aside>\n                            <img src=\"http://placehold.it/330x220\" alt=\"\">\n                        </aside>\n                        <article>\n                            <h2>Berlin Kurfurtendamm Apartments</h2>\n                            <span class=\"result-rating\">Reside Rating</span>\n                            <address class=\"dt\">Address - Berlin, Kurfurtendamm, Germany</address>\n                            <span class=\"min-stay dt\">Minimum Stay - 3 nights</span>\n                            <span class=\"result-price\">Price from - 40.00 per night</span>\n                            <a class=\"more-link\" href=\"\">more info</a>\n                        </article>\n                    </div>\n                </li>",
+			"<img src=\"http://placehold.it/112x75\" alt=\"\">",
+			"<div class=\"content-wrapper\">",
+			"<div class=\"conten-wrapper\">",
+			"<img src=\"http://placehold.it/224x150\" alt=\"\">",
+			"class=\"chosen\"",
+			"<br>",
+			"span class=\"na",
+			"/div",
+			"                        <div>\n                            <span class=\"name\">Selina Wakeling</span>\n                            <span class=\"role\">Director of Operations</span>\n                        </div>",
+			"dd",
+			"dt",
+			"visuallyhiddem",
+			"img",
+			"class=\"content-wrapper",
+			"</li>",
+			"<li>",
+			"ABACUS<",
+			"<p>A full-on party venue in the heart of the City</p>",
+			"h4",
+			"font-family:'FuturaW01-MediumCondens';",
+			"indent",
+			"@{base}",
+			"base",
+			"@base",
+			"@red",
+			"<p class=\"excerpt\">The King that is Joey Negro is set to play with ........</p>",
+			"solar",
+			"new-",
+			"woo",
+			"woo_",
+			"woo_i",
+			"woo_image",
+			"post_thumb",
+			"woo_image",
+			"thumb.php",
+			"add_theme_support( 'post-thumbnails' );",
+			"Home",
+			"woo_nav",
+			"woo_header_after",
+			"footer",
+			"<img src=\"img/nandos-header-image.png\" width=\"142\" height=\"123px\" alt=\"\">",
+			"<img src=\"img/nandos-header-image.png\" width=\"142\" height=\"123px\">",
+			"width=\"480\" height=\"200\"",
+			" alt=\"\"",
+			"<a href=\"team-entry.php\" title=\"\">INFO</a>",
+			"gallery",
+			"news",
+			"Macada",
+			"blog-focus.php",
+			"featured",
+			"enter-your-team",
+			"enter-your",
+			"enter",
+			"box",
+			"enter-your-team",
+			"margin-top",
+			"about",
+			"img/galler",
+			"g src=\"img/gallery-",
+			"news",
+			"form.new",
+			"inset",
+			"two",
+			"twitter",
+			"newsl",
+			"twitter",
+			"<a href=\"#\" title=\"\">ENTER HERE</a>",
+			"post",
+			"<a href=\"#\" title=\"\">INFO</a>",
+			"<a href=\"\" title=\"\">INFO</a>",
+			"post",
+			".transition(@chznFocusTransition);",
+			".box-shadow(@chznFocusBoxShadow);",
+			"#gradient > .vertical(@white, @grayLighter);",
+			".box-shadow(none);",
+			".box-shadow(@chznBoxShadow);",
+			".border-radius(@chznBorderRadius);",
+			"post",
+			"<h2>Event title goes here over two lines</h2>",
+			"puma"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<a href=\"index.php\" id=\"header-logo\" class=\"ir\" title=\"\">reside</a>",
+			"Probability of success",
+			"Estimated value",
+			"Estimated completion date",
+			"$APP",
+			"$SITE"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"acc",
+				"customers/templates/customers/notifications/account-details-change.md"
+			],
+			[
+				"",
+				"/Users/James/Library/Caches/Cleanup At Startup/Transmit/B1188EC3-C749-403A-A693-F6076B86D548/enter-your-team.php"
+			],
+			[
+				"events",
+				"events/templates/events.html"
+			],
+			[
+				"page.",
+				"bmg/templates/page.html"
+			],
+			[
+				"mast",
+				"bmg/templates/_masthead.html"
+			],
+			[
+				"js",
+				"_wwwroot/js/script.js"
+			],
+			[
+				"in",
+				"_wwwroot/index.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Applications/MAMP/htdocs/PROJECTS/links.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 362.0,
+	"status_bar_visible": true
+}

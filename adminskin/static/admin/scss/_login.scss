@@ -1,0 +1,18 @@
+body.login {
+	.container {
+		header {
+			margin: 0;
+			#branding {
+				h1 {
+					padding: 0;
+					margin: 15px 0 0 0;
+					background-position: center center;
+					width: auto;
+				}
+			}
+		}
+		#login-form {
+			margin: 0;
+		}
+	}
+}

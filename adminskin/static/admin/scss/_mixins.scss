@@ -1,0 +1,59 @@
+/* Helper mixins */
+
+/* ========== Image replacement ========== */
+
+@mixin ir($width, $height, $img, $top:0, $left:0) {
+    display: block;
+    border: 0;
+    text-indent: -999em;
+    overflow: hidden;
+    text-align: left;
+    direction: ltr;
+    *line-height: 0;
+    width: $width;
+    height: $height;
+    background: transparent $img $top $left no-repeat;
+}
+
+/* ========== Button with icon on left ========== */
+
+@mixin button-icon($icon) {
+    color: $link-on-feature;
+    padding: 10px 15px 10px 30px;
+    font-size: 1.2em;
+    background: $feature url(#{$icon}) 12px 12px no-repeat;
+    border: none;
+}
+
+/* ========== Button without icon ========== */
+
+@mixin button() {
+    color: $link-on-feature;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    background: $feature none;
+    border: none;
+}
+
+/* ========== Button without icon ========== */
+
+@mixin shadow($color) {
+    -moz-box-shadow: 0 0 5px #{$color};
+    -webkit-box-shadow: 0 0 5px #{$color};
+    box-shadow: 0 0 5px #{$color};
+}
+
+@mixin rounded($radius) {
+    -webkit-border-radius: #{$radius};
+    -moz-border-radius: #{$radius};
+    border-radius: #{$radius};
+}
+
+@mixin sorting-icons($position) {
+    background: transparent url('../img/e-sorting-icons.gif') #{$position} no-repeat;
+}
+
+@mixin fake-link() {
+    text-decoration: underline;
+    cursor: pointer;
+}

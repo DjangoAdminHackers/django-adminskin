@@ -1,96 +1,9 @@
 @import "vars";
 @import "mixins";
+@import "icons";
 @import "general";
+@import "login";
 
-/* Colours */
-
-$base: #4C4C4C;             /*  base text colour */
-$strong: #251909;           /*  stronger text colour */
-$brand: #007BBC; 
-$light: #FFF;           /*  distictive brand colour */
-$link: #0079C3;             /*  text link colour */
-$link-hover: #005682;       /*  text link hover colour */
-$feature-link: #C1680F;             /*  text link colour */
-$feature-link-hover: #AF5E0C;       /*  text link hover colour */
-$text-on-brand: $light;       /*  text on the brand colour */
-$link-on-brand: $light;       /*  text link on the brand */
-$background: #F3F3F3;       /*  site background colour */
-$highlight: #E4E4E4;        /*  highlight colour for elements on the background */
-$feature: #222;             /*  fill colour for buttons and key UI elements */
-$text-on-feature: $light;     /*  text on feature colour */
-$link-on-feature: $light;     /*  link on the feature colour */
-
-/* Typography */
-
-$font: Arial, Helvetica, sans-serif;
-$feature-font: 'Open Sans Condensed', sans-serif;
-
-/* Helper mixins */
-
-/* ========== Image replacement ========== */
-
-@mixin ir($width, $height, $img, $top:0, $left:0) {
-    display: block;
-    border: 0;
-    text-indent: -999em;
-    overflow: hidden;
-    text-align: left;
-    direction: ltr;
-    *line-height: 0;
-    width: $width;
-    height: $height;
-    background: transparent $img $top $left no-repeat;
-}
-
-/* ========== Button with icon on left ========== */
-
-@mixin button-icon($icon) {
-    color: $link-on-feature;
-    padding: 10px 15px 10px 30px;
-    font-size: 1.2em;
-    background: $feature url(#{$icon}) 12px 12px no-repeat;
-    border: none;
-}
-
-/* ========== Button without icon ========== */
-
-@mixin button() {
-    color: $link-on-feature;
-    padding: 10px 15px;
-    font-size: 1.2em;
-    background: $feature none;
-    border: none;
-}
-
-/* ========== Button without icon ========== */
-
-@mixin shadow($color) {
-    -moz-box-shadow: 0 0 5px #{$color};
-    -webkit-box-shadow: 0 0 5px #{$color};
-    box-shadow: 0 0 5px #{$color};
-}
-
-@mixin rounded($radius) {
-    -webkit-border-radius: #{$radius};
-    -moz-border-radius: #{$radius};
-    border-radius: #{$radius};
-}
-
-@mixin sorting-icons($position) {
-    background: transparent url('../img/e-sorting-icons.gif') #{$position} no-repeat;
-}
-
-@mixin fake-link() {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-/* Icon overrides */
-
-.addlink {background: url('../img/e-icon_addlink.gif') 0 4px no-repeat;}
-.changelink {background: url('../img/e-icon_changelink.gif') 0 4px no-repeat;}
-
-.changelink, .addlink {padding-left: 15px;}
 
 /* Overrides */
 
