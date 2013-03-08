@@ -9,6 +9,8 @@ body {
 		text-transform: $heading-style;
 		line-height: 1.4em;
 		font-weight: normal;
+		margin-bottom: 10px;
+		float: left;
 	}
 	h1 {
 		font-size: 2.5em;
@@ -28,14 +30,12 @@ body {
 		text-decoration: underline;
 	}
 	#container {
-		min-width: 730px;
+		min-width: 62em;
 		#content {
 			margin: 0;
 			clear: both;
-			h1 {
-				float: left;
-				line-height: 41px;
-				margin-bottom: 10px;
+			h2 {
+				border-bottom: solid 1px #000;
 			}
 			#content-main {
 				clear: both;
