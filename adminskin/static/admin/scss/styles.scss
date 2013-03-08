@@ -138,11 +138,16 @@ ul.object-tools {
             margin: 4px 0;
             @include button();
             @include rounded(2px);
+            &:hover {
+                text-decoration: underline;
+            }
             &.addlink {
                 @include button-icon('../img/e-icon_addlink-white.gif');
             }
-            &:hover {
-                text-decoration: underline;
+            &.viewsitelink {
+                &:hover {
+                    @include button();
+                }
             }
         }
     }
