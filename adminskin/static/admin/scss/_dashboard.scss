@@ -11,17 +11,17 @@
 			padding: 0 0 3px 0;
 			font-size: 28px;
 			border-bottom: solid 1px #000;
-			font-family: $feature-font;
+			font-family: $heading-font;
 			font-weight: normal;
 			background: none;
 			a {
-				color: $link;
-				&:link, &:active, &:active, &:visited {color: $link;}
-				&:hover {color: $link-hover;}
+				color: $link-color;
+				&:link, &:active, &:active, &:visited {color: $link-color;}
+				&:hover {color: $link-hover-color;}
 			}
 		}
 		tr {
-			background: $highlight;
+			background: #F3F3F3;
 			td, th {
 				line-height: 1.6em;
 				vertical-align: middle;
@@ -38,14 +38,14 @@
 				padding: 0 0 3px 0;
 				font-size: 28px;
 				border-bottom: solid 1px #000;
-				font-family: $feature-font;
+				font-family: $heading-font;
 				font-weight: normal;
 				background: none;
-				color: $strong;
+				color: #000;
 			}
 			h3 {
 				font-size: 22px;
-				color: $strong;       
+				color: #000;       
 			}
 			ul {
 				li {

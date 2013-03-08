@@ -24,7 +24,7 @@
 		top: -42px;
 		right: 0;
 		background: none;
-		background-color: $feature;
+		background-color: #222;
 		padding: 6px 8px;
 		border: none;
 		@include rounded(2px 2px 0 0);
@@ -45,14 +45,14 @@
 			}
 			input#search-submit {
 				@include button();
-				background-color: $light;
+				background-color: #FFF;
 				padding: 1px 10px 0 10px;
 				color: $link;
 				height: 30px;
 			}
 			input#search-submit:hover {
 				@include fake-link();
-				color: $link-hover;
+				color: $link-hover-color;
 			}
 			span {
 				position: absolute;
@@ -92,25 +92,24 @@
 			padding: 0 0 3px 0;
 			font-size: 28px;
 			border-bottom: solid 1px #000;
-			font-family: $feature-font;
 			font-weight: normal;
 			background: none;
-			color: $strong;
+			color: #000;
 		}
 		h3 {
 			font-size: 20px;
-		 margin-bottom: 0.3em;
-		 color: $strong;
+			margin-bottom: 0.3em;
+			color: #000;
 		}
 		li {
 			a {
 				font-size: 1.2em;
 				line-height: 1.4em;
-				color: $link;
+				color: $link-color;
 				text-decoration: none;
 				font-weight: normal;
-				&:link, &:active, &:active, &:visited {color: $link; text-decoration: none;}
-				&:hover {color: $link-hover; text-decoration: underline;}
+				&:link, &:active, &:active, &:visited {color: $link-color; text-decoration: none;}
+				&:hover {color: $link-hover-color; text-decoration: underline;}
 			}
 		}
 		li.selected {
@@ -118,20 +117,20 @@
 			a {
 				font-size: 1.2em;
 				line-height: 1.4em;
-				color: $strong!important;
+				color: #000!important;
 				text-decoration: none;
 				font-weight: normal;
-				&:link, &:active, &:active, &:visited {color: $strong!important; text-decoration: none;}
+				&:link, &:active, &:active, &:visited {color: #000!important; text-decoration: none;}
 				&:hover {text-decoration: underline;}
 			}
 		}
 	}
 	.xfull {
 		border: none;
-		border-top: solid 3px $strong;
-		background: $light;
+		border-top: solid 3px #000;
+		background: #FFF;
 		.toplinks {
-			background: $light;
+			background: #FFF;
 			border-bottom: none;
 			li {
 				a {
@@ -142,7 +141,7 @@
 		}
 	}
 	.actions {
-		background: $light;
+		background: #FFF;
 		border-right: none;
 		border-bottom: none;
 		padding: 5px 5px 10px 5px;
@@ -154,9 +153,9 @@
 			width: 200px;
 		}
 		button.button {
-			background: $strong;
+			background: #000;
 			border: none;
-			color: $light;
+			color: #FFF;
 			padding: 3px 5px 4px 5px;
 			@include rounded(2px);
 		}
@@ -168,11 +167,11 @@
 		#result_list {
 			border: none;
 			thead th, tfoot td {
-				background: $brand;
-				color: $text-on-brand;
+				background: $block-color;
+				color: #FFF;
 				font-weight: normal;
 				text-transform: uppercase;
-				font-family: $feature-font;
+				font-family: $heading-font;
 				font-size: 1.4em;
 				padding: 5px;
 				text-align: center;
@@ -195,16 +194,16 @@
 					a.decending:hover {@include sorting-icons(-5px -115px);}
 				}
 				a {
-					color: $link-on-brand;
+					color: #FFF;
 					text-decoration: none;
 					text-transform: uppercase;
-					&:link, &:active, &:active, &:visited {color: $link-on-brand;}
+					&:link, &:active, &:active, &:visited {color: #FFF;}
 					&:hover {text-decoration: underline;}
 				}
 			}
 			tbody {
 				tr {
-					background: $light;
+					background: #FFF;
 					td, th {
 						vertical-align: middle;
 					}
@@ -213,7 +212,7 @@
 		}
 	}
 	.paginator {
-		background: $light;
+		background: #FFF;
 		border: none;
 		font-size: 1em;
 		input {
@@ -224,9 +223,9 @@
 			@include fake-link();
 		}
 		a:hover {
-			background: $light;
-			border-color: $strong;
-			color: $link-hover;
+			background: #FFF;
+			border-color: #000;
+			color: $link-hover-color;
 		}
 	}
 }
@@ -251,7 +250,7 @@
 
 .submit-row {
 	padding: 10px;
-	background: $light;
+	background: #FFF;
 	input {
 		@include button();
 		@include rounded(2px);

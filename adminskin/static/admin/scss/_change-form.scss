@@ -21,14 +21,14 @@
 			line-height: 37px;
 		}
 		fieldset, .inline-group {
-			background: $light;
+			background: #FFF;
 			border: none;
 			@include shadow(#AAA);
 			margin-bottom: 30px;
 			h2 {
-				background: $light;
+				background: #FFF;
 				font-size: 28px;
-				color: $brand;
+				color: $block-color;
 				font-weight: normal;
 				margin: 12px;
 				padding: 0;
@@ -38,18 +38,18 @@
 			}
 			table {
 				thead th, tfoot td {
-					background: $brand;
-					color: $text-on-brand;
+					background: $block-color;
+					color: #FFF;
 					font-weight: normal;
 					text-transform: uppercase;
-					font-family: $feature-font;
+					font-family: $heading-font;
 					font-size: 1.4em;
 					padding: 5px;
 					text-align: center;
 				}
 				tbody {
 					tr {
-						background: $light;
+						background: #FFF;
 						td, th {
 							vertical-align: middle;
 						}
@@ -69,10 +69,10 @@
 				}
 			}
 			h3 {
-				background: $brand;
+				background: $block-color;
 				font-size: 16px;
 				border: none;
-				color: $light;
+				color: #FFF;
 				font-weight: normal;
 				margin: 12px;
 				padding: 5px 80px 5px 10px;
@@ -89,7 +89,7 @@
 					right: 10px;
 					top: 5px;
 					label {
-						color: $light;
+						color: #FFF;
 						font-size: 0.8em;
 					}
 				}

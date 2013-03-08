@@ -5,16 +5,16 @@
 }
 
 .calendarbox {
-	border: solid 1px $brand; 
+	border: solid 1px $block-color; 
 	p.calendar-cancel {
-		background: $light;
+		background: #FFF;
 	}
 }
 
 div.calendar {
 	table {
 		caption {
-			background: $brand;
+			background: $block-color;
 		}
 		th {
 			background: #FFF;
@@ -24,8 +24,8 @@ div.calendar {
 			td {
 				a {
 					&:hover {
-						color: $light;
-						background: $brand;
+						color: #FFF;
+						background: $block-color;
 					}
 				}
 			}
