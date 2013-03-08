@@ -122,8 +122,7 @@ ul.messagelist {
 ul.object-tools {
     position: static;
     display: inline-block;
-    float: left;
-    clear: left;
+    float: right;
     margin: 5px 0 20px 0;
     li {
         height: auto;
@@ -231,7 +230,7 @@ ul.object-tools {
         display: inline-block;
         position: absolute;
         top: -42px;
-        right: 0;
+        left: 0;
         background: none;
         background-color: $feature;
     	padding: 6px 8px;
