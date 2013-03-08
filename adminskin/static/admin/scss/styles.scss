@@ -440,12 +440,17 @@ ul.object-tools {
     border: none;
 }
 
-// change
-
 #changelist {
     margin-right: 0;
     #changelist-filter {
         display: none;
+    }  
+}
+
+#changelist.show-filters {
+    margin-right: 200px;
+    #changelist-filter {
+        display: block;
     }  
 }
 

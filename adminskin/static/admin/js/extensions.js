@@ -12,14 +12,11 @@
         /* Add show/hide filters toggle link */
         $('#changelist-search').after('<a id="toggle" class="show">Show table filters</a>');
         
-        /* Hide filters by default */
-        $('#changelist').addClass('hidden');
-        
         /* Show/hide filters on toggle link click */
         $('#toggle').click(function(){
-            $('#changelist').toggleClass('hidden shown');
+            $('#changelist').toggleClass('show-filters');
             $('#toggle').toggleClass('show hide');
-            if ( $('#toggle').hasClass('show') ) {
+            if ($('#toggle').hasClass('show')) {
                 $(this).text('Show table filters')
             } else {
                 $(this).text('Hide table filters') 
