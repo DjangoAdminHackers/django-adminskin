@@ -111,6 +111,7 @@ ul.messagelist {
     h1 {
         display: inline-block;
         float: left;
+        margin-bottom: 20px;
     }
     #content-main {
         clear: both;
@@ -123,7 +124,7 @@ ul.object-tools {
     position: static;
     display: inline-block;
     float: left;
-    margin: 0 0 20px 25px;
+    margin: 0 0 0 25px;
     padding-left: 15px;
     border-left: solid 2px #CCC;
     li {
@@ -134,7 +135,7 @@ ul.object-tools {
         padding: 0 0 0 0;
         &:hover {background: none;}
         a.addlink, a.historylink {
-            margin: 2px 0;
+            margin: 4px 0;
             @include button-icon('../img/e-icon_addlink-white.gif');
             @include rounded(2px);
             &:link, &:active, &:active, &:visited {@include button-icon('../img/e-icon_addlink-white.gif')}
