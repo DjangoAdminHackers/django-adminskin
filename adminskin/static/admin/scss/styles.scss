@@ -134,12 +134,22 @@ ul.object-tools {
         margin: 0 15px 0 0;
         padding: 0 0 0 0;
         &:hover {background: none;}
-        a.addlink, a.historylink {
+        a {
             margin: 4px 0;
-            @include button-icon('../img/e-icon_addlink-white.gif');
+            @include button();
             @include rounded(2px);
-            &:link, &:active, &:active, &:visited {@include button-icon('../img/e-icon_addlink-white.gif')}
-            &:hover {@include button-icon('../img/e-icon_addlink-white.gif')}
+            &.addlink {
+                @include button-icon('../img/e-icon_addlink-white.gif');
+            }
+            &:link,
+            &:active,
+            &:active,
+            &:visited {
+                @include button-icon('../img/e-icon_addlink-white.gif')
+            }
+            &:hover {
+                @include button-icon('../img/e-icon_addlink-white.gif')
+            }
         }
     }
 }
