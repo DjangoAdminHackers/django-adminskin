@@ -471,106 +471,108 @@ ul.object-tools {
 /* Change form */
 
 .change-form {
-    h1 {
-        display: inline-block;
-        float: left;
-        margin-bottom: 0.5em;
-    }
-    .cancel-header {
-        float: right;
-        @include button();
-        @include rounded(2px);
-    }
-    .cancel-footer {
-        display: inline-block;
-        float: left;
-        font-size: 1.2em;
-        line-height: 37px;
-    }
-    fieldset, .inline-group {
-        background: $light;
-        border: none;
-        @include shadow(#AAA);
-        margin-bottom: 30px;
-        h2 {
-            background: $light;
-            font-size: 28px;
-            color: $brand;
-            font-weight: normal;
-            margin: 12px;
-            padding: 0;            
+    #content {
+        h1 {
             display: inline-block;
-            border-bottom: solid 1px #000;
-            text-transform: capitalize;
+            float: left;
+            margin-bottom: 0.5em;
         }
-        table {
-            thead th, tfoot td {
-                background: $brand;
-                color: $text-on-brand;
+        .cancel-header {
+            float: right;
+            @include button();
+            @include rounded(2px);
+        }
+        .cancel-footer {
+            display: inline-block;
+            float: left;
+            font-size: 1.2em;
+            line-height: 37px;
+        }
+        fieldset, .inline-group {
+            background: $light;
+            border: none;
+            @include shadow(#AAA);
+            margin-bottom: 30px;
+            h2 {
+                background: $light;
+                font-size: 28px;
+                color: $brand;
                 font-weight: normal;
-                text-transform: uppercase;
-                font-family: $feature-font;
-                font-size: 1.4em;
-                padding: 5px;
-                text-align: center;
+                margin: 12px;
+                padding: 0;            
+                display: inline-block;
+                border-bottom: solid 1px #000;
+                text-transform: capitalize;
             }
-            tbody {
-                tr {
-                    background: $light;
-                    td, th {
-                        vertical-align: middle;
-                    }
-                    td.original {
-                        position: relative;
-                        p {
-                            top: 2px;
+            table {
+                thead th, tfoot td {
+                    background: $brand;
+                    color: $text-on-brand;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    font-family: $feature-font;
+                    font-size: 1.4em;
+                    padding: 5px;
+                    text-align: center;
+                }
+                tbody {
+                    tr {
+                        background: $light;
+                        td, th {
+                            vertical-align: middle;
+                        }
+                        td.original {
+                            position: relative;
+                            p {
+                                top: 2px;
+                            }
                         }
                     }
-                }
-                tr.add-row {
-                    td {
-                        background: #FFF;
-                        padding: 12px;
+                    tr.add-row {
+                        td {
+                            background: #FFF;
+                            padding: 12px;
+                        }
                     }
+                }            
+            }
+            h3 {
+                background: $brand;
+                font-size: 16px;
+                border: none;
+                color: $light;
+                font-weight: normal;
+                margin: 12px;
+                padding: 5px 80px 5px 10px;           
+                display: inline-block;
+                text-transform: capitalize;
+                position: relative;
+                a.inline-deletelink {
+                    position: absolute;
+                    right: 10px;
+                    top: 9px;
                 }
-            }            
-        }
-        h3 {
-            background: $brand;
-            font-size: 16px;
-            border: none;
-            color: $light;
-            font-weight: normal;
-            margin: 12px;
-            padding: 5px 80px 5px 10px;           
-            display: inline-block;
-            text-transform: capitalize;
-            position: relative;
-            a.inline-deletelink {
-                position: absolute;
-                right: 10px;
-                top: 9px;
-            }
-            span.delete {
-                position: absolute;
-                right: 10px;
-                top: 5px;
-                label {
-                    color: $light;
-                    font-size: 0.8em;                    
-                }             
+                span.delete {
+                    position: absolute;
+                    right: 10px;
+                    top: 5px;
+                    label {
+                        color: $light;
+                        font-size: 0.8em;                    
+                    }             
+                }
             }
         }
-    }
-    .inline-related fieldset {
-        margin-bottom: 0;
-        -moz-box-shadow: 0 0 0 #FFF;
-        -webkit-box-shadow: 0 0 0 #FFF;
-        box-shadow: 0 0 0 #FFF;        
-    }
-    div.add-row {
-        background: #FFF;
-        padding: 12px;        
+        .inline-related fieldset {
+            margin-bottom: 0;
+            -moz-box-shadow: 0 0 0 #FFF;
+            -webkit-box-shadow: 0 0 0 #FFF;
+            box-shadow: 0 0 0 #FFF;        
+        }
+        div.add-row {
+            background: #FFF;
+            padding: 12px;        
+        }
     }
 }
 
