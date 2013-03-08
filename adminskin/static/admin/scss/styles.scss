@@ -57,6 +57,8 @@ a {
         h1 {
            @include ir(auto, 65px, url('../img/e-logo.png'));
            width: auto;
+           margin: 0;
+           height: 40px;
         }
     }
     #user-tools {
