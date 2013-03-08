@@ -62,7 +62,7 @@ a {
         }
     }
     #user-tools {
-        right: 15px;
+        padding: 0;
         font-size: 1.1em;
         a.features-link {
             color: $feature-link;
@@ -123,16 +123,18 @@ ul.object-tools {
     position: static;
     display: inline-block;
     float: left;
-    clear: left;
-    margin: 5px 0 20px 0;
+    margin: 0 0 20px 25px;
+    padding-left: 15px;
+    border-left: solid 2px #CCC;
     li {
         height: auto;
         background: none;
         float: left;
-        margin: 0 20px 0 0;
+        margin: 0 15px 0 0;
         padding: 0 0 0 0;
         &:hover {background: none;}
         a.addlink, a.historylink {
+            margin: 2px 0;
             @include button-icon('../img/e-icon_addlink-white.gif');
             @include rounded(2px);
             &:link, &:active, &:active, &:visited {@include button-icon('../img/e-icon_addlink-white.gif')}
