@@ -111,7 +111,8 @@ ul.messagelist {
     h1 {
         display: inline-block;
         float: left;
-        margin-bottom: 20px;
+        line-height: 41px;
+        margin-bottom: 10px;
     }
     #content-main {
         clear: both;
@@ -281,15 +282,13 @@ ul.object-tools {
         }
         a#toggle {
             line-height: 30px;
+            border-right: solid 2px #222;
             padding: 2px 15px 0 15px;
             position: absolute;
             top: -50px;
             right: 0;
-            background-color: $light;
             background-repeat: no-repeat;
             cursor: pointer;
-            @include shadow(#AAA);
-            @include rounded(2px);
         }
         a#toggle.show {
             padding-left: 30px;
@@ -496,10 +495,12 @@ ul.object-tools {
         h1 {
             display: inline-block;
             float: left;
-            margin-bottom: 0.5em;
+            line-height: 41px;
+            margin-bottom: 10px;
         }
         .cancel-header {
             float: right;
+            margin: 4px 0;
             @include button();
             @include rounded(2px);
         }
