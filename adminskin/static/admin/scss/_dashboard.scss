@@ -6,9 +6,11 @@
 		border: none;
 		margin-bottom: 2em;
 		caption {
+			background: none;
 			float: left;
 			line-height: 1.4em;
 			border-bottom: solid 1px #000;
+			padding: 0;
 			margin-bottom: 10px;
 			font-family: $heading-font;
 			font-size: 2.3em;
