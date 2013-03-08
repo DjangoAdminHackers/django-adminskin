@@ -18,20 +18,20 @@
 /* ========== Button with icon on left ========== */
 
 @mixin button-icon($icon) {
-	color: $link-on-feature;
+	color: #FFF;
 	padding: 10px 15px 10px 30px;
 	font-size: 1.2em;
-	background: $feature url(#{$icon}) 12px 12px no-repeat;
+	background: #222 url(#{$icon}) 12px 12px no-repeat;
 	border: none;
 }
 
 /* ========== Button without icon ========== */
 
 @mixin button() {
-	color: $link-on-feature;
+	color: #FFF;
 	padding: 10px 15px;
 	font-size: 1.2em;
-	background: $feature none;
+	background-color: #222;
 	border: none;
 }
 
