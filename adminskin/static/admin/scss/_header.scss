@@ -1,0 +1,15 @@
+div#header {
+	background: none;
+	margin-bottom: 15px;
+	#branding {
+		h1 {
+			height: 40px;
+			margin: 0;
+			width: auto;
+			background: transparent $logo 0 0 no-repeat;
+		}
+	}
+	#user-tools {
+		padding: 0;
+	}
+}

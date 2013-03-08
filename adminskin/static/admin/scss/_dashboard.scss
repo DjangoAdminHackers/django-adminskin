@@ -1,0 +1,65 @@
+/* Dashboard only */
+
+.dashboard {
+	.module {
+		background: transparent;
+		border: none;
+		margin-bottom: 2em;
+		caption {
+			display: inline-block;
+			margin: 0 0 10px 0;
+			padding: 0 0 3px 0;
+			font-size: 28px;
+			border-bottom: solid 1px #000;
+			font-family: $feature-font;
+			font-weight: normal;
+			background: none;
+			a {
+				color: $link;
+				&:link, &:active, &:active, &:visited {color: $link;}
+				&:hover {color: $link-hover;}
+			}
+		}
+		tr {
+			background: $highlight;
+			td, th {
+				line-height: 1.6em;
+				vertical-align: middle;
+				border-bottom: solid 2px #F3F3F3;
+			}
+		}
+	}
+	#content-related {
+		margin-right: -21em;
+		.module {
+			h2 {
+				display: inline-block;
+				margin: 0 0 10px 0;
+				padding: 0 0 3px 0;
+				font-size: 28px;
+				border-bottom: solid 1px #000;
+				font-family: $feature-font;
+				font-weight: normal;
+				background: none;
+				color: $strong;
+			}
+			h3 {
+				font-size: 22px;
+				color: $strong;       
+			}
+			ul {
+				li {
+					font-size: 1em;
+					line-height: 1.4em;
+					margin: 5px 0;
+					a {
+						
+					}
+					span {
+						font-size: 0.9em;
+					}
+				}
+			}
+		}
+	}
+}

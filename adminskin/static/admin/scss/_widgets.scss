@@ -1,0 +1,34 @@
+/* Widgets */
+
+.calendarbox a.calendarnav-previous, .calendarbox a.calendarnav-next {
+	background: none;
+}
+
+.calendarbox {
+	border: solid 1px $brand; 
+	p.calendar-cancel {
+		background: $light;
+	}
+}
+
+div.calendar {
+	table {
+		caption {
+			background: $brand;
+		}
+		th {
+			background: #FFF;
+			color: #888;
+		}
+		tr {
+			td {
+				a {
+					&:hover {
+						color: $light;
+						background: $brand;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+ul.messagelist {
+	margin: 0;
+	padding: 0;
+	border-top: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	border-left: solid 1px #CCC;
+	float: right;
+	display: inline-block;
+	li {
+		border-bottom: solid 1px #CCC;
+		margin: 0;
+		padding-right: 10px;
+	}
+}

@@ -1,0 +1,667 @@
+// Vars
+
+/* Colours */
+
+$base: #4C4C4C;             /*  base text colour */
+$strong: #251909;           /*  stronger text colour */
+$brand: #007BBC; 
+$light: #FFF;           /*  distictive brand colour */
+$link: #0079C3;             /*  text link colour */
+$link-hover: #005682;       /*  text link hover colour */
+$feature-link: #C1680F;             /*  text link colour */
+$feature-link-hover: #AF5E0C;       /*  text link hover colour */
+$text-on-brand: $light;       /*  text on the brand colour */
+$link-on-brand: $light;       /*  text link on the brand */
+$background: #F3F3F3;       /*  site background colour */
+$highlight: #E4E4E4;        /*  highlight colour for elements on the background */
+$feature: #222;             /*  fill colour for buttons and key UI elements */
+$text-on-feature: $light;     /*  text on feature colour */
+$link-on-feature: $light;     /*  link on the feature colour */
+
+/* Typography */
+
+$font: Arial, Helvetica, sans-serif;
+$feature-font: 'Open Sans Condensed', sans-serif;
+
+//
+
+
+@import "vars";
+@import "mixins";
+@import "icons";
+
+@import "base";
+@import "login";
+
+
+/* Overrides */
+
+body {
+    background: $background;
+    color: $base;
+    font-family: $font;
+    margin: 15px;
+}
+
+h1, h2, h3, h4 {
+    color: $strong;
+    font-family: $feature-font;
+    font-weight: normal; 
+}
+
+h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+a {
+    color: $link;
+    text-decoration: none;
+    font-weight: normal;
+    &:link, &:active, &:active, &:visited {color: $link; text-decoration: none;}
+    &:hover {color: $link-hover; text-decoration: underline;}
+}
+
+#container {
+    min-width: 730px;
+}
+
+#header {
+    background: none;
+    color: $base;
+    margin-bottom: 15px;
+    
+    /* ========== Replace site name with logo ========== */
+    
+    #branding {
+        h1 {
+           @include ir(auto, 65px, url('../img/e-logo.png'));
+           width: auto;
+           margin: 0;
+           height: 40px;
+        }
+    }
+    #user-tools {
+        padding: 0;
+        font-size: 1.1em;
+        a.features-link {
+            color: $feature-link;
+            &:link, &:active, &:active, &:visited {color: $feature-link;}
+            &:hover {color: $feature-link-hover;}
+        }
+    }
+    a {
+        color: $link;
+        text-decoration: none;
+        font-weight: normal;
+        &:link, &:active, &:active, &:visited {color: $link; text-decoration: none;}
+        &:hover {color: $link-hover; text-decoration: underline;}
+    }
+}
+
+div.breadcrumbs {
+	display: inline-block;
+	background: none;
+	border-top: solid 1px #CCC;
+	margin: 0 0 20px 0;
+	padding: 5px;    
+}
+
+/* ========== Error/Success messages after action ========== */
+
+ul.messagelist {
+    margin: 0;
+    padding: 0;
+    border-top: solid 1px #CCC;
+    border-right: solid 1px #CCC;
+    border-left: solid 1px #CCC;
+    float: right;
+    display: inline-block;
+    li {
+        border-bottom: solid 1px #CCC;
+        margin: 0;
+        padding-right: 10px;
+    }
+}
+
+#content {
+    margin: 0;   
+}
+.change-list #content {
+    h1 {
+        display: inline-block;
+        float: left;
+        line-height: 41px;
+        margin-bottom: 10px;
+    }
+    #content-main {
+        clear: both;
+    }
+}
+
+/* ========== Main action buttons ========== */
+
+ul.object-tools {
+    position: static;
+    display: inline-block;
+    float: left;
+    margin: 0 0 0 25px;
+    padding-left: 15px;
+    border-left: solid 2px #CCC;
+    li {
+        height: auto;
+        background: none;
+        float: left;
+        margin: 0 15px 0 0;
+        padding: 0 0 0 0;
+        &:hover {background: none;}
+        a, a:link, a:active, a:visited {
+            margin: 4px 0;
+            @include button();
+            @include rounded(2px);
+            &:hover {
+                text-decoration: underline;
+            }
+            &.addlink {
+                @include button-icon('../img/e-icon_addlink-white.gif');
+            }
+            &.viewsitelink {
+                &:hover {
+                    @include button();
+                }
+            }
+        }
+    }
+}
+
+/* Dashboard only */
+
+.dashboard {
+    .module {
+        background: transparent;
+        border: none;
+        margin-bottom: 2em;
+        caption {
+            display: inline-block;
+            margin: 0 0 10px 0;
+            padding: 0 0 3px 0;
+            font-size: 28px;
+            border-bottom: solid 1px #000;
+            font-family: $feature-font;
+            font-weight: normal;
+            background: none;
+            a {
+                color: $link;
+                &:link, &:active, &:active, &:visited {color: $link;}
+                &:hover {color: $link-hover;}
+            }
+        }
+        tr {
+            background: $highlight;
+            td, th {
+                line-height: 1.6em;
+                vertical-align: middle;
+                border-bottom: solid 2px #F3F3F3;
+            }
+        }
+    }
+    #content-related {
+        margin-right: -21em;
+        .module {
+            h2 {
+                display: inline-block;
+                margin: 0 0 10px 0;
+                padding: 0 0 3px 0;
+                font-size: 28px;
+                border-bottom: solid 1px #000;
+                font-family: $feature-font;
+                font-weight: normal;
+                background: none;
+                color: $strong;
+            }
+            h3 {
+                font-size: 22px;
+                color: $strong;       
+            }
+            ul {
+                li {
+                    font-size: 1em;
+                    line-height: 1.4em;
+                    margin: 5px 0;
+                    a {
+                        
+                    }
+                    span {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Changlist only */
+
+/* ========== Toolbar (search) ========== */
+
+.change-list .filtered {
+    min-height: 0;
+}
+
+.change-list .filtered .results, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull, .filtered div.actions {
+    margin-right: 0 !important;
+}
+
+#changelist {
+    width: auto;
+    display: block;
+    margin-right: 200px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+    #toolbar {
+        display: inline-block;
+        position: absolute;
+        top: -42px;
+        right: 0;
+        background: none;
+        background-color: $feature;
+    	padding: 6px 8px;
+    	border: none;
+    	@include rounded(2px 2px 0 0);
+        form {
+            position: relative;
+            input {
+                height: 26px;
+            	font-size: 12px;
+            	background: #DDD;
+            	margin: 0;
+            	margin-left: 5px;
+            	padding: 0 5px;
+            	border: none;
+            	@include rounded(2px);
+            }
+            input#searchbar {
+                width: 140px;
+            }
+            input#search-submit {
+                @include button();
+                background-color: $light;
+                padding: 1px 10px 0 10px;
+                color: $link;
+                height: 30px;
+            }
+            input#search-submit:hover {
+                @include fake-link();
+                color: $link-hover;
+            }
+            span {
+                position: absolute;
+                left: 0;
+                top: -30px;
+                font-size: 1em;
+            }
+        }
+        a#toggle {
+            line-height: 24px;
+            border-right: solid 2px #222;
+            padding: 0 10px;
+            position: absolute;
+            top: -40px;
+            right: 0;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+        a#toggle.show {
+            padding-left: 30px;
+            background-image: url('../img/e-left_arrow.gif');
+            background-position: 8% center;
+        }
+        a#toggle.hide {
+            padding-right: 30px;
+            background-image: url('../img/e-right_arrow.gif');
+            background-position: 92% center;
+        }
+    }
+    #changelist-filter {
+        background: none;
+        border: none;
+        right: -180px;
+        h2 {
+            display: inline-block;
+            margin: 0 0 10px 0;
+            padding: 0 0 3px 0;
+            font-size: 28px;
+            border-bottom: solid 1px #000;
+            font-family: $feature-font;
+            font-weight: normal;
+            background: none;
+            color: $strong;
+        }
+        h3 {
+            font-size: 20px;
+	        margin-bottom: 0.3em;
+	        color: $strong;
+        }
+        li {
+            a {
+                font-size: 1.2em;
+                line-height: 1.4em;
+                color: $link;
+                text-decoration: none;
+                font-weight: normal;
+                &:link, &:active, &:active, &:visited {color: $link; text-decoration: none;}
+                &:hover {color: $link-hover; text-decoration: underline;}
+            }
+        }
+        li.selected {
+            border-left: solid 5px #222;
+            a {
+                font-size: 1.2em;
+                line-height: 1.4em;
+                color: $strong!important;
+                text-decoration: none;
+                font-weight: normal;
+                &:link, &:active, &:active, &:visited {color: $strong!important; text-decoration: none;}
+                &:hover {text-decoration: underline;}
+            }
+        }
+    }
+    .xfull {
+        border: none;
+        border-top: solid 3px $strong;
+        background: $light;
+        .toplinks {
+            background: $light;
+            border-bottom: none;
+            li {
+                a {
+                    font-size: 1.2em;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+    .actions {
+        background: $light;
+        border-right: none;
+        border-bottom: none;
+        padding: 5px 5px 10px 5px;
+        label, span.action-counter {
+            font-size: 1em;
+        }
+        select {
+            margin: 0;
+            width: 200px;
+        }
+        button.button {
+            background: $strong;
+            border: none;
+            color: $light;
+            padding: 3px 5px 4px 5px;
+            @include rounded(2px);
+        }
+        button.button:hover {
+            @include fake-link();
+        }
+    }
+    .results {
+        #result_list {
+            border: none;
+            thead th, tfoot td {
+                background: $brand;
+                color: $text-on-brand;
+                font-weight: normal;
+                text-transform: uppercase;
+                font-family: $feature-font;
+                font-size: 1.4em;
+                padding: 5px;
+                text-align: center;
+                .sortoptions {
+                    padding: 0 5px;
+                    height: 27px;
+                    span {
+                        line-height: 27px;
+                    }
+                    a {
+                        width: 14px;
+                        height: 14px;
+                        margin-top: 6px;
+                    }
+                    a.sortremove {@include sorting-icons(-4px -6px);}
+                    a.sortremove:hover {@include sorting-icons(-4px -28px);}
+                    a.ascending {@include sorting-icons(-5px -50px);}
+                    a.ascending:hover {@include sorting-icons(-5px -72px);}
+                    a.decending {@include sorting-icons(-5px -94px);}
+                    a.decending:hover {@include sorting-icons(-5px -115px);}
+                }
+                a {
+                    color: $link-on-brand;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    &:link, &:active, &:active, &:visited {color: $link-on-brand;}
+                    &:hover {text-decoration: underline;}
+                }
+            }
+            tbody {
+                tr {
+                    background: $light;
+                    td, th {
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+    .paginator {
+        background: $light;
+        border: none;
+        font-size: 1em;
+        input {
+            @include button();
+            @include rounded(2px);
+        }
+        input:hover {
+            @include fake-link();
+        }
+        a:hover {
+            background: $light;
+            border-color: $strong;
+            color: $link-hover;
+        }
+    }
+}
+
+#changelist.module {
+    border: none;
+}
+
+#changelist {
+    margin-right: 0;
+    #changelist-filter {
+        display: none;
+    }  
+}
+
+#changelist.show-filters {
+    margin-right: 200px;
+    #changelist-filter {
+        display: block;
+    }  
+}
+
+.submit-row {
+    padding: 10px;
+    background: $light;
+    input {
+        @include button();
+        @include rounded(2px);
+        background-color: #AAA;
+    }
+    input:hover {
+        @include fake-link();
+    }
+    input.default {
+        @include button();
+    }
+    p.deletelink-box {
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+    }
+}
+
+/* Change form */
+
+.change-form {
+    #content {
+        h1 {
+            display: inline-block;
+            float: left;
+            line-height: 41px;
+            margin-bottom: 10px;
+        }
+        .cancel-header {
+            float: right;
+            margin: 4px 0;
+            @include button();
+            @include rounded(2px);
+        }
+        .cancel-footer {
+            display: inline-block;
+            float: left;
+            font-size: 1.2em;
+            line-height: 37px;
+        }
+        fieldset, .inline-group {
+            background: $light;
+            border: none;
+            @include shadow(#AAA);
+            margin-bottom: 30px;
+            h2 {
+                background: $light;
+                font-size: 28px;
+                color: $brand;
+                font-weight: normal;
+                margin: 12px;
+                padding: 0;            
+                display: inline-block;
+                border-bottom: solid 1px #000;
+                text-transform: capitalize;
+            }
+            table {
+                thead th, tfoot td {
+                    background: $brand;
+                    color: $text-on-brand;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    font-family: $feature-font;
+                    font-size: 1.4em;
+                    padding: 5px;
+                    text-align: center;
+                }
+                tbody {
+                    tr {
+                        background: $light;
+                        td, th {
+                            vertical-align: middle;
+                        }
+                        td.original {
+                            position: relative;
+                            p {
+                                top: 2px;
+                            }
+                        }
+                    }
+                    tr.add-row {
+                        td {
+                            background: #FFF;
+                            padding: 12px;
+                        }
+                    }
+                }            
+            }
+            h3 {
+                background: $brand;
+                font-size: 16px;
+                border: none;
+                color: $light;
+                font-weight: normal;
+                margin: 12px;
+                padding: 5px 80px 5px 10px;           
+                display: inline-block;
+                text-transform: capitalize;
+                position: relative;
+                a.inline-deletelink {
+                    position: absolute;
+                    right: 10px;
+                    top: 9px;
+                }
+                span.delete {
+                    position: absolute;
+                    right: 10px;
+                    top: 5px;
+                    label {
+                        color: $light;
+                        font-size: 0.8em;                    
+                    }             
+                }
+            }
+        }
+        .inline-related fieldset {
+            margin-bottom: 0;
+            -moz-box-shadow: 0 0 0 #FFF;
+            -webkit-box-shadow: 0 0 0 #FFF;
+            box-shadow: 0 0 0 #FFF;        
+        }
+        div.add-row {
+            background: #FFF;
+            padding: 12px;        
+        }
+    }
+}
+
+/* Widgets */
+
+.calendarbox a.calendarnav-previous, .calendarbox a.calendarnav-next {
+    background: none;
+}
+
+.calendarbox {
+    border: solid 1px $brand; 
+    p.calendar-cancel {
+        background: $light;
+    }
+}
+
+div.calendar {
+    table {
+        caption {
+            background: $brand;
+        }
+        th {
+            background: #FFF;
+            color: #888;
+        }
+        tr {
+            td {
+                a {
+                    &:hover {
+                        color: $light;
+                        background: $brand;
+                    }
+                }
+            }
+        }
+    }
+}
