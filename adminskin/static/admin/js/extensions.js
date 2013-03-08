@@ -5,7 +5,7 @@
 $(document).ready(function() {
 
 	/* Add .ir class to logo */
-	$("h1#site-name").addClass("ir");
+	$("#branding h1").addClass("ir");
 	
 	/* Move object tools next to h1 */
 	$("ul.object-tools").insertAfter("#content h1");
@@ -25,7 +25,7 @@ $(document).ready(function() {
 	});
 	
 	/* Add cancel links to change form */
-	
+
 	$('.change-form #content-main').before('<a href="../" class="cancel-header">Cancel</a>');
 	$('.change-form .submit-row').prepend('<a href="../" class="cancel-footer">Cancel</a>');
 	
