@@ -56,6 +56,7 @@ a {
     #branding {
         h1 {
            @include ir(auto, 65px, url('../img/e-logo.png'));
+           width: auto;
         }
     }
     #user-tools {
