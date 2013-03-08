@@ -3,9 +3,6 @@
 /* Move object tools next to the changelist title */
 
 jQuery(document).ready(function ($) {
-
-        /* Add .ir class to logo */
-        $("h1#site-name").addClass("ir");
         
         /* Move object tools next to h1 */
         $("ul.object-tools").insertAfter("#content h1");
