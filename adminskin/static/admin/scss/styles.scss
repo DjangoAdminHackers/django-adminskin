@@ -262,6 +262,9 @@ ul.object-tools {
             	border: none;
             	@include rounded(2px);
             }
+            input#searchbar {
+                width: 140px;
+            }
             input#search-submit {
                 @include button();
                 background-color: $light;
@@ -377,6 +380,7 @@ ul.object-tools {
             border: none;
             color: $light;
             padding: 3px 5px 4px 5px;
+            @include rounded(2px);
         }
         button.button:hover {
             @include fake-link();
