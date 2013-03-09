@@ -20,7 +20,7 @@ ul.object-tools {
 			@include rounded(2px);
 			color: #FFF!important;
 			&:hover {
-				text-decoration: underline;
+				text-decoration: none;
 				color: #FFF!important;
 				background-color: #1C5C76;
 			}
