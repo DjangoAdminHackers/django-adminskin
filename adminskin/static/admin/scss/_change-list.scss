@@ -70,13 +70,15 @@
 		a#toggle {
 			line-height: 2em;
 			border-right: solid 2px #222;
-			padding: 0 10px;
+			padding: 10px;
 			position: absolute;
 			top: -55px;
 			right: 0;
+			background-color: #FFF;
 			background-repeat: no-repeat;
 			cursor: pointer;
 			text-transform: uppercase;
+			@include rounded(10px 0 0 10px);
 		}
 		a#toggle.show {
 			padding-left: 30px;
