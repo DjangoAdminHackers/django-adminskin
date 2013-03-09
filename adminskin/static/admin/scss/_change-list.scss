@@ -108,9 +108,6 @@
 		border-right: none;
 		border-bottom: none;
 		padding: 5px 5px 10px 5px;
-		label, span.action-counter {
-			font-size: 1em;
-		}
 		select {
 			margin: 0;
 			width: 200px;
@@ -121,9 +118,7 @@
 			color: #FFF;
 			padding: 3px 5px 4px 5px;
 			@include rounded(2px);
-		}
-		button.button:hover {
-			@include fake-link();
+			cursor: pointer;
 		}
 	}
 	.results {
@@ -156,12 +151,12 @@
 					a.decending {@include sorting-icons(-5px -94px);}
 					a.decending:hover {@include sorting-icons(-5px -115px);}
 				}
-				a {
-					color: #FFF;
-					text-decoration: none;
+				a, a:link, a:active, a:visited {
+					color: #FFF!important;
 					text-transform: uppercase;
-					&:link, &:active, &:active, &:visited {color: #FFF;}
-					&:hover {text-decoration: underline;}
+					&:hover {
+						color: #FFF!important;
+					}
 				}
 			}
 			tbody {
