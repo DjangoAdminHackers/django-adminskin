@@ -26,6 +26,11 @@ body {
 		color: $link-color;
 		text-decoration: none;
 	}
+	li, dt, dd {
+		font-size: $font-size;
+		line-height: 1.2em;
+		margin: 5px 0;
+	}
 	a:hover {
 		color: $link-hover-color;
 		text-decoration: underline;
