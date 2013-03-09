@@ -7,19 +7,17 @@
 }
 
 .change-list .filtered .results, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull, .filtered div.actions {
-	margin-right: 0 !important;
+	margin-right: 0!important;
 }
 
 #changelist {
 	width: auto;
-	display: block;
 	margin-right: 200px;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 	#toolbar {
-		display: inline-block;
 		position: absolute;
 		top: -42px;
 		right: 0;
@@ -47,26 +45,23 @@
 				@include button();
 				background-color: #FFF;
 				padding: 1px 10px 0 10px;
-				color: $link-color;
 				height: 30px;
 			}
 			input#search-submit:hover {
 				@include fake-link();
-				color: $link-hover-color;
 			}
 			span {
 				position: absolute;
-				left: 0;
-				top: -30px;
-				font-size: 1em;
+				left: -8px;
+				top: -25px;
 			}
 		}
 		a#toggle {
-			line-height: 24px;
+			line-height: 2em;
 			border-right: solid 2px #222;
 			padding: 0 10px;
 			position: absolute;
-			top: -40px;
+			top: -55px;
 			right: 0;
 			background-repeat: no-repeat;
 			cursor: pointer;
@@ -96,48 +91,16 @@
 			background: none;
 			color: #000;
 		}
-		h3 {
-			font-size: 20px;
-			margin-bottom: 0.3em;
-			color: #000;
-		}
-		li {
-			a {
-				font-size: 1.2em;
-				line-height: 1.4em;
-				color: $link-color;
-				text-decoration: none;
-				font-weight: normal;
-				&:link, &:active, &:active, &:visited {color: $link-color; text-decoration: none;}
-				&:hover {color: $link-hover-color; text-decoration: underline;}
-			}
-		}
 		li.selected {
 			border-left: solid 5px #222;
-			a {
-				font-size: 1.2em;
-				line-height: 1.4em;
-				color: #000!important;
-				text-decoration: none;
-				font-weight: normal;
-				&:link, &:active, &:active, &:visited {color: #000!important; text-decoration: none;}
-				&:hover {text-decoration: underline;}
-			}
 		}
 	}
 	.xfull {
 		border: none;
 		border-top: solid 3px #000;
-		background: #FFF;
 		.toplinks {
 			background: #FFF;
 			border-bottom: none;
-			li {
-				a {
-					font-size: 1.2em;
-					line-height: 26px;
-				}
-			}
 		}
 	}
 	.actions {
