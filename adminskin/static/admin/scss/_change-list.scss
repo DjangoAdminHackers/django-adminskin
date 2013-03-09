@@ -17,6 +17,15 @@
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
+	&.hide-filters {
+		margin-right: 0;
+		#changelist-filter {
+			display: none;
+		}  	
+	}
+	&.module {
+		border: none;
+	}
 	#toolbar {
 		position: absolute;
 		top: -42px;
@@ -124,15 +133,15 @@
 	.results {
 		#result_list {
 			border: none;
-			thead th, tfoot td {
+			thead th {
 				background: $block-color;
-				color: #FFF;
-				font-weight: normal;
 				text-transform: uppercase;
+				text-align: center;
+				line-height: 1.4em;
+				padding: 5px;
 				font-family: $heading-font;
 				font-size: 1.4em;
-				padding: 5px;
-				text-align: center;
+				font-weight: normal;
 				.sortoptions {
 					padding: 0 5px;
 					height: 27px;
@@ -153,7 +162,6 @@
 				}
 				a, a:link, a:active, a:visited {
 					color: #FFF!important;
-					text-transform: uppercase;
 					&:hover {
 						color: #FFF!important;
 					}
@@ -172,7 +180,6 @@
 	.paginator {
 		background: #FFF;
 		border: none;
-		font-size: 1em;
 		input {
 			@include button();
 			@include rounded(2px);
@@ -183,27 +190,8 @@
 		a:hover {
 			background: #FFF;
 			border-color: #000;
-			color: $link-hover-color;
 		}
 	}
-}
-
-#changelist.module {
-	border: none;
-}
-
-#changelist {
-	margin-right: 0;
-	#changelist-filter {
-		display: none;
-	}  
-}
-
-#changelist.show-filters {
-	margin-right: 200px;
-	#changelist-filter {
-		display: block;
-	}  
 }
 
 .submit-row {
