@@ -25,6 +25,7 @@ ul.object-tools {
 			}
 			&.addlink {
 				@include button-icon('../img/icon_addlink-white.gif');
+				background-color: #49afcd;
 			}
 			&.viewsitelink {
 				&:hover {
