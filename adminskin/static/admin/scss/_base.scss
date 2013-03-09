@@ -23,12 +23,12 @@ body {
 		font-size: 2em!important;
 	}
 	a, a:link, a:active, a:visited {
-		color: $link-color!important;
-		text-decoration: none!important;
+		color: $link-color;
+		text-decoration: none;
 	}
 	a:hover {
 		color: $link-hover-color;
-		text-decoration: underline!important;
+		text-decoration: underline;
 	}
 	#container {
 		min-width: 62em;
