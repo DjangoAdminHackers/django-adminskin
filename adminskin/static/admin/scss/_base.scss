@@ -54,6 +54,9 @@ body {
 			}
 			#content-main {
 				clear: both;
+				.module {
+					border: none;
+				}
 			}
 		}
 	}
