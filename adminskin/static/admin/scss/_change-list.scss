@@ -53,6 +53,7 @@
 			}
 			input#search-submit {
 				@include button();
+				color: #000;
 				background-color: #FFF;
 				padding: 1px 10px 0 10px;
 				height: 30px;
@@ -75,6 +76,7 @@
 			right: 0;
 			background-repeat: no-repeat;
 			cursor: pointer;
+			text-transform: uppercase;
 		}
 		a#toggle.show {
 			padding-left: 30px;
