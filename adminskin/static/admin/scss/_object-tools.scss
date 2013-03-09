@@ -22,6 +22,7 @@ ul.object-tools {
 			&:hover {
 				text-decoration: underline;
 				color: #FFF!important;
+				background-color: #186d85;
 			}
 			&.addlink {
 				@include button-icon('../img/icon_addlink-white.gif');
