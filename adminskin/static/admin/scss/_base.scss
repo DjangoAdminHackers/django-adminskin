@@ -41,6 +41,9 @@ body {
 		#content {
 			margin: 0;
 			clear: both;
+			h1 {
+				float: left;
+			}
 			h2 {
 				border-bottom: solid 1px #000;
 			}

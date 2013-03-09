@@ -8,16 +8,16 @@ jQuery(document).ready(function ($) {
         $("ul.object-tools").insertAfter("#content h1");
         
         /* Add show/hide filters toggle link */
-        $('#changelist-search').after('<a id="toggle" class="hide">Hide table filters</a>');
+        $('#changelist-search').after('<a id="toggle" class="hide">Hide filters</a>');
         
         /* Show/hide filters on toggle link click */
         $('#toggle').click(function(){
             $('#changelist').toggleClass('hide-filters');
             $('#toggle').toggleClass('show hide');
             if ($('#toggle').hasClass('show')) {
-                $(this).text('Show table filters');
+                $(this).text('Show filters');
             } else {
-                $(this).text('Hide table filters');
+                $(this).text('Hide filters');
             }
         });
         

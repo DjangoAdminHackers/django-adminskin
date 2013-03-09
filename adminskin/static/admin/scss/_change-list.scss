@@ -49,6 +49,7 @@
 			}
 			input#searchbar {
 				width: 140px;
+				padding: 0 5px;
 			}
 			input#search-submit {
 				@include button();
