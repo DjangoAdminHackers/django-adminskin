@@ -26,6 +26,7 @@ body {
 	a, a:link, a:active, a:visited {
 		color: $link-color;
 		text-decoration: none;
+		font-weight: normal!important;
 	}
 	li, dt, dd {
 		font-size: $font-size;
