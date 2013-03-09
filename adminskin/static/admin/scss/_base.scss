@@ -14,21 +14,21 @@ body {
 		background: none!important;
 	}
 	h1 {
-		font-size: 2.5em;
+		font-size: 2.5em!important;
 	}
 	h2 {
-		font-size: 2.3em;
+		font-size: 2.3em!important;
 	}
 	h3 {
-		font-size: 2em;
+		font-size: 2em!important;
 	}
 	a, a:link, a:active, a:visited {
-		color: $link-color;
-		text-decoration: none;
+		color: $link-color!important;
+		text-decoration: none!important;
 	}
 	a:hover {
 		color: $link-hover-color;
-		text-decoration: underline;
+		text-decoration: underline!important;
 	}
 	#container {
 		min-width: 62em;
