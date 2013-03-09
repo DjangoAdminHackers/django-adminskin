@@ -16,13 +16,15 @@
 			font-size: 2.3em;
 			font-weight: normal;
 		}
-		tr {
-			background: #E4E4E4;
-			td, th {
-				line-height: 2em;
-				vertical-align: middle;
-				border-bottom: solid 2px #F3F3F3;
-				font-weight: normal;
+		tbody {
+			background: #FFF;
+			tr {
+				td, th {
+					line-height: 2em;
+					vertical-align: middle;
+					border-bottom: solid 1px #F5F1E8;
+					font-weight: normal;
+				}
 			}
 		}
 	}
