@@ -9,10 +9,9 @@
 			@include rounded(2px);
 		}
 		.cancel-footer {
-			display: inline-block;
 			float: left;
 			font-size: 1.2em;
-			line-height: 37px;
+			line-height: 3em;
 		}
 		fieldset, .inline-group {
 			background: #FFF;
@@ -20,15 +19,9 @@
 			@include shadow(#AAA);
 			margin-bottom: 30px;
 			h2 {
-				background: #FFF;
-				font-size: 28px;
-				color: $block-color;
-				font-weight: normal;
 				margin: 12px;
-				padding: 0;
 				display: inline-block;
 				border-bottom: solid 1px #000;
-				text-transform: capitalize;
 			}
 			table {
 				thead th, tfoot td {
