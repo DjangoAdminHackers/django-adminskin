@@ -206,13 +206,9 @@
 	input {
 		@include button();
 		@include rounded(2px);
-		background-color: #AAA;
-	}
-	input:hover {
-		@include fake-link();
-	}
-	input.default {
-		@include button();
+		&.default {
+			@include button($button-background, $button-hover-background);
+		}
 	}
 	p.deletelink-box {
 		position: absolute;
