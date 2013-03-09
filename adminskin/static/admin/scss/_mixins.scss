@@ -1,13 +1,14 @@
 /* ========== Buttons ========== */
 
-@mixin button() {
-	color: #FFF;
+@mixin button($bg: #AAA, $hvrbg: #888) {
+	color: #FFF!important;
 	padding: 10px 15px;
 	font-size: 1.2em;
-	background: $button-background;
+	background: $bg;
 	border: none;
 	&:hover {
-		background: $button-hover-background;
+		background: $hvrbg;
+		color: #FFF!important;
 	}
 }
 

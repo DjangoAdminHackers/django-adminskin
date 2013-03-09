@@ -34,6 +34,9 @@ body {
 		line-height: 1.2em;
 		margin: 5px 0;
 	}
+	th, td {
+		padding: 10px;
+	}
 	a:hover {
 		color: $link-hover-color;
 		text-decoration: underline;
