@@ -25,9 +25,11 @@ ul.object-tools {
 				background-color: #1C5C76;
 			}
 			&.addlink {
+				@include button();
 				@include button-icon('../img/icon_addlink-white.gif');
 			}
 			&.viewsitelink {
+				@include button();
 				&:hover {
 					@include button();
 				}

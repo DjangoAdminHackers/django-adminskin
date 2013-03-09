@@ -13,10 +13,7 @@
 #changelist {
 	width: auto;
 	margin-right: 200px;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
+	@include transition(all);
 	&.hide-filters {
 		margin-right: 0;
 		#changelist-filter {
@@ -82,12 +79,12 @@
 		}
 		a#toggle.show {
 			padding-left: 30px;
-			background-image: url('../img/e-left_arrow.gif');
+			background-image: url('../img/left_arrow.gif');
 			background-position: 8% center;
 		}
 		a#toggle.hide {
 			padding-right: 30px;
-			background-image: url('../img/e-right_arrow.gif');
+			background-image: url('../img/right_arrow.gif');
 			background-position: 92% center;
 		}
 	}

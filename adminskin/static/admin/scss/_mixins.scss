@@ -1,41 +1,25 @@
-/* Helper mixins */
-
-/* ========== Image replacement ========== */
-
-@mixin ir($width, $height, $img, $top:0, $left:0) {
-	display: block;
-	border: 0;
-	text-indent: -999em;
-	overflow: hidden;
-	text-align: left;
-	direction: ltr;
-	*line-height: 0;
-	width: $width;
-	height: $height;
-	background: transparent $img $top $left no-repeat;
-}
-
-/* ========== Button with icon on left ========== */
-
-@mixin button-icon($icon) {
-	color: #FFF;
-	padding: 10px 15px 10px 30px;
-	font-size: 1.2em;
-	background: $button-background url(#{$icon}) 12px 12px no-repeat;
-	border: none;
-}
-
-/* ========== Button without icon ========== */
+/* ========== Buttons ========== */
 
 @mixin button() {
 	color: #FFF;
 	padding: 10px 15px;
 	font-size: 1.2em;
-	background-color: $button-background;
+	background: $button-background;
 	border: none;
+	&:hover {
+		background: $button-hover-background;
+	}
 }
 
-/* ========== Button without icon ========== */
+@mixin button-icon($icon) {
+	padding-left: 30px;
+	background: $button-background url(#{$icon}) 12px 12px no-repeat;
+	&:hover {
+		background: $button-hover-background url(#{$icon}) 12px 12px no-repeat;
+	}
+}
+
+/* ========== CSS3 ========== */
 
 @mixin shadow($color) {
 	-moz-box-shadow: 0 0 5px #{$color};
@@ -49,9 +33,20 @@
 	border-radius: #{$radius};
 }
 
+@mixin transition($var) {
+	-webkit-transition: $var 0.5s ease-in-out;
+	-moz-transition: $var 0.5s ease-in-out;
+	-o-transition: $var 0.5s ease-in-out;
+	transition: $var 0.5s ease-in-out;
+}
+
+/* ========== Icons ========== */
+
 @mixin sorting-icons($position) {
 	background: transparent url('../img/e-sorting-icons.gif') #{$position} no-repeat;
 }
+
+/* ========== Helper Mixins ========== */
 
 @mixin fake-link() {
 	text-decoration: underline;
