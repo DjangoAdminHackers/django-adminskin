@@ -32,11 +32,8 @@
 		padding: 6px 8px;
 		border: none;
 		@include rounded(2px 2px 0 0);
-		form {
+		form#changelist-search {
 			position: relative;
-			background: #FFF;
-			@include shadow();
-			@include rounded(2px 0 2px 2px);
 			input {
 				height: 26px;
 				font-size: 12px;
@@ -140,48 +137,53 @@
 			cursor: pointer;
 		}
 	}
-	.results {
-		#result_list {
-			border: none;
-			thead th {
-				background: $block-color;
-				text-transform: uppercase;
-				text-align: center;
-				line-height: 1.4em;
-				padding: 5px;
-				font-family: $heading-font;
-				font-size: 1.4em;
-				font-weight: normal;
-				.sortoptions {
-					padding: 0 5px;
-					height: 27px;
-					span {
-						line-height: 27px;
+	form.changelist-form {
+		background: #FFF;
+		@include shadow();
+		@include rounded(2px 0 2px 2px);
+		.results {
+			#result_list {
+				border: none;
+				thead th {
+					background: $block-color;
+					text-transform: uppercase;
+					text-align: center;
+					line-height: 1.4em;
+					padding: 5px;
+					font-family: $heading-font;
+					font-size: 1.4em;
+					font-weight: normal;
+					.sortoptions {
+						padding: 0 5px;
+						height: 27px;
+						span {
+							line-height: 27px;
+						}
+						a {
+							width: 14px;
+							height: 14px;
+							margin-top: 6px;
+						}
+						a.sortremove {@include sorting-icons(-4px -6px);}
+						a.sortremove:hover {@include sorting-icons(-4px -28px);}
+						a.ascending {@include sorting-icons(-5px -50px);}
+						a.ascending:hover {@include sorting-icons(-5px -72px);}
+						a.decending {@include sorting-icons(-5px -94px);}
+						a.decending:hover {@include sorting-icons(-5px -115px);}
 					}
-					a {
-						width: 14px;
-						height: 14px;
-						margin-top: 6px;
-					}
-					a.sortremove {@include sorting-icons(-4px -6px);}
-					a.sortremove:hover {@include sorting-icons(-4px -28px);}
-					a.ascending {@include sorting-icons(-5px -50px);}
-					a.ascending:hover {@include sorting-icons(-5px -72px);}
-					a.decending {@include sorting-icons(-5px -94px);}
-					a.decending:hover {@include sorting-icons(-5px -115px);}
-				}
-				a, a:link, a:active, a:visited {
-					color: #FFF!important;
-					&:hover {
+					a, a:link, a:active, a:visited {
 						color: #FFF!important;
+						&:hover {
+							color: #FFF!important;
+						}
 					}
 				}
-			}
-			tbody {
-				tr {
-					background: #FFF;
-					td, th {
-						vertical-align: middle;
+				tbody {
+					tr {
+						background: #FFF;
+						td, th {
+							vertical-align: middle;
+						}
 					}
 				}
 			}
