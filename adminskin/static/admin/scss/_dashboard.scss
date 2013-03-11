@@ -2,12 +2,9 @@
 
 .dashboard {
 	.module {
-		background: #FFF;
 		border: none;
 		margin-bottom: 2em;
-		padding: 10px;
-		@include shadow();
-		@include rounded(2px);
+
 		caption {
 			background: none;
 			float: left;
@@ -30,6 +27,14 @@
 					padding: 5px;
 				}
 			}
+		}
+	}
+	#content-main {
+		.module {
+			background: #FFF;
+			padding: 10px;
+			@include shadow();
+			@include rounded(2px);			
 		}
 	}
 	#content-related {
