@@ -3,11 +3,9 @@ body.login {
 		#header {
 			margin: 0;
 			#branding {
-				h1 {
-					padding: 0;
-					margin: 15px 0 0 0;
-					background-position: center center;
-					width: auto;
+				padding: 15px;
+				img {
+					max-width: 100%;
 				}
 			}
 		}
