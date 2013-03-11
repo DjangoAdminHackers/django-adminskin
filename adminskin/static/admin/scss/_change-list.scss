@@ -137,7 +137,7 @@
 			cursor: pointer;
 		}
 	}
-	form.changelist-form {
+	form#changelist-form {
 		background: #FFF;
 		@include shadow();
 		@include rounded(2px 0 2px 2px);
