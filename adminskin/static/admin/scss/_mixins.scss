@@ -23,11 +23,13 @@
 
 /* ========== CSS3 ========== */
 
-@mixin shadow($color) {
-	-moz-box-shadow: 0 0 5px #{$color};
-	-webkit-box-shadow: 0 0 5px #{$color};
-	box-shadow: 0 0 5px #{$color};
+@mixin shadow() {
+	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: 0 0 6px rgba(0,0,0,0.3);
 }
+
+
 
 @mixin rounded($radius) {
 	-webkit-border-radius: #{$radius};

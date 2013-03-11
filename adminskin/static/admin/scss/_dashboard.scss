@@ -2,9 +2,12 @@
 
 .dashboard {
 	.module {
-		background: none;
+		background: #FFF;
 		border: none;
 		margin-bottom: 2em;
+		padding: 10px;
+		@include shadow();
+		@include rounded(2px);
 		caption {
 			background: none;
 			float: left;
