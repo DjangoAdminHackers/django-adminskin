@@ -13,6 +13,28 @@
 #changelist {
 	width: auto;
 	@include transition(all);
+	a#toggle {
+		display: none;
+	}
+	&.filtered {
+		margin-right: 200px;
+		#toolbar {
+			a#toggle {
+				display: block;
+				line-height: 2em;
+				border-right: solid 2px #222;
+				padding: 5px 10px 5px 20px;
+				position: absolute;
+				top: -55px;
+				right: 0;
+				background-color: #FFF;
+				background-repeat: no-repeat;
+				cursor: pointer;
+				text-transform: uppercase;
+				@include rounded(17px 0 0 17px);
+			}
+		}
+	}
 	&.hide-filters {
 		margin-right: 0;
 		#changelist-filter {
@@ -67,9 +89,6 @@
 				top: -25px;
 			}
 		}
-		a#toggle {
-			display: none;
-		}
 		a#toggle.show {
 			padding-left: 30px;
 			background-image: url('../img/left_arrow.gif');
@@ -79,25 +98,6 @@
 			padding-right: 30px;
 			background-image: url('../img/right_arrow.gif');
 			background-position: 92% center;
-		}
-	}
-	&.filtered {
-		margin-right: 200px;
-		#toolbar {
-			a#toggle {
-				display: block;
-				line-height: 2em;
-				border-right: solid 2px #222;
-				padding: 5px 10px 5px 20px;
-				position: absolute;
-				top: -55px;
-				right: 0;
-				background-color: #FFF;
-				background-repeat: no-repeat;
-				cursor: pointer;
-				text-transform: uppercase;
-				@include rounded(17px 0 0 17px);
-			}
 		}
 	}
 	#changelist-filter {
