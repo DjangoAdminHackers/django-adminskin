@@ -52,6 +52,9 @@ body {
 			h2 {
 				border-bottom: solid 1px #000;
 			}
+			> p {
+				clear: both;
+			}
 			#content-main {
 				clear: both;
 				.module {
