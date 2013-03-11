@@ -13,25 +13,6 @@
 #changelist {
 	width: auto;
 	@include transition(all);
-	&.filtered {
-		margin-right: 200px;
-		#toolbar {
-			a#toggle {
-				display: inline;
-				line-height: 2em;
-				border-right: solid 2px #222;
-				padding: 5px 10px 5px 20px;
-				position: absolute;
-				top: -55px;
-				right: 0;
-				background-color: #FFF;
-				background-repeat: no-repeat;
-				cursor: pointer;
-				text-transform: uppercase;
-				@include rounded(17px 0 0 17px);
-			}
-		}
-	}
 	&.hide-filters {
 		margin-right: 0;
 		#changelist-filter {
@@ -98,6 +79,25 @@
 			padding-right: 30px;
 			background-image: url('../img/right_arrow.gif');
 			background-position: 92% center;
+		}
+	}
+	&.filtered {
+		margin-right: 200px;
+		#toolbar {
+			a#toggle {
+				display: block;
+				line-height: 2em;
+				border-right: solid 2px #222;
+				padding: 5px 10px 5px 20px;
+				position: absolute;
+				top: -55px;
+				right: 0;
+				background-color: #FFF;
+				background-repeat: no-repeat;
+				cursor: pointer;
+				text-transform: uppercase;
+				@include rounded(17px 0 0 17px);
+			}
 		}
 	}
 	#changelist-filter {
