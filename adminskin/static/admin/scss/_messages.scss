@@ -4,8 +4,9 @@ ul.messagelist {
 	border-top: solid 1px #CCC;
 	border-right: solid 1px #CCC;
 	border-left: solid 1px #CCC;
-	float: right;
-	display: inline-block;
+	position: absolute;
+	top: 30px;
+	right: 0;
 	li {
 		border-bottom: solid 1px #CCC;
 		margin: 0;
