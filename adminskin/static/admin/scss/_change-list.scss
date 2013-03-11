@@ -12,8 +12,10 @@
 
 #changelist {
 	width: auto;
-	margin-right: 200px;
 	@include transition(all);
+	&.filtered {
+		margin-right: 200px;
+	}
 	&.hide-filters {
 		margin-right: 0;
 		#changelist-filter {
