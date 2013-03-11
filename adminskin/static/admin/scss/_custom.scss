@@ -1,6 +1,8 @@
 div#batch-upload {
-	height: 20px!important;
-	background-color: #539345!important;
+	div.progress-bar {
+		height: 20px!important;
+		background-color: #539345!important;
+	}
 	button#upload-button {
 		@include button();
 		@include button-icon('../img/icon_addlink-white.gif');
