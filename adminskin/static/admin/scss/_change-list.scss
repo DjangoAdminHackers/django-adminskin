@@ -179,7 +179,7 @@
 						a.decending {@include sorting-icons(-5px -94px);}
 						a.decending:hover {@include sorting-icons(-5px -115px);}
 					}
-					a, a:link, a:active, a:visited {
+					a, a:link, a:active, a:visited, span {
 						color: #FFF!important;
 						&:hover {
 							color: #FFF!important;
