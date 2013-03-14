@@ -13,6 +13,7 @@
 #changelist {
 	width: auto;
 	@include transition(all);
+	background: transparent;
 	a#toggle {
 		display: none;
 	}
@@ -122,7 +123,7 @@
 		border: none;
 		border-top: solid 3px #000;
 		.toplinks {
-			background: #FFF;
+			background: transparent;
 			border-bottom: none;
 		}
 	}
