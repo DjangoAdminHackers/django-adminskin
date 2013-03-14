@@ -4,6 +4,7 @@
 
 .change-list .filtered {
 	min-height: 0;
+	background: transparent;
 }
 
 .change-list .filtered .results, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull, .filtered div.actions {
@@ -13,7 +14,6 @@
 #changelist {
 	width: auto;
 	@include transition(all);
-	background: transparent;
 	a#toggle {
 		display: none;
 	}
