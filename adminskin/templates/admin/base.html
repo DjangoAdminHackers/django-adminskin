@@ -5,15 +5,35 @@
 {% block extrahead %}
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	{% compress css %}
+	<link rel="stylesheet" type="text/css" href="{% static "admin/css/foundation.css" %}" />
 	<link rel="stylesheet" type="text/x-scss" href="{% static "admin/scss/styles.scss" %}" />
 	{% endcompress %}
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 {% endblock %}
 
 {% block blockbots %}
+	<script type="text/javascript" src="{% static "admin/js/lib/modernizr.js" %}"></script>
+
 	<script type="text/javascript" src="{% static "admin/js/lib/jquery.js" %}"></script>
 	<script type="text/javascript" src="{% static "admin/js/lib/jquery.cookie.js" %}"></script>
+
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.reveal.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.alerts.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.clearing.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.cookie.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.dropdown.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.forms.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.joyride.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.magellan.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.orbit.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.section.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.tooltips.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.topbar.js' %}"></script>
+	<script type="text/javascript" src="{% static 'admin/js/lib/foundation/foundation.reveal.js' %}"></script>
 	<script type="text/javascript" src="{% static "admin/js/extensions.js" %}"></script>
 	<script type="text/javascript" src="{% static "admin/js/photo_upload.js" %}"></script>
+	<script>$(document).foundation();</script>
 	{{ block.super }}
 {% endblock %}
