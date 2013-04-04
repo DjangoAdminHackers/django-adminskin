@@ -34,9 +34,9 @@ div#batch-upload {
 		}
 	}
 	a.close-reveal-modal {
-		@include rounded(2px);
-		background: #000;
-		background-image: none;
-		padding: 5px 10px;
+		@include rounded(2px)!important;
+		background: #000!important;
+		background-image: none!important;
+		padding: 5px 10px!important;
 	}
 }
