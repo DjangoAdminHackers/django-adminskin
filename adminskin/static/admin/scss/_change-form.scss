@@ -81,9 +81,17 @@
 					}
 				}
 			}
-			.selector h2 {
-				font-size: 1.5em!important;
-				border: none;
+			.selector {
+				.selector-filter {
+					border-width: 1px 1px 1px 0;
+				}
+				.selector-chosen select {
+					border-top: 1px solid #CCC;
+				}
+				h2 {
+					font-size: 1.5em!important;
+					border: none;
+				}
 			}
 		}
 		.inline-related fieldset {
