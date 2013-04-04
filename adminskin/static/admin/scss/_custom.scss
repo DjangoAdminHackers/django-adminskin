@@ -23,6 +23,8 @@ div#batch-upload {
 	margin-left: -25%;
 	ul.modal-actions {
 		list-style: none;
+		overflow: hidden;
+		padding-left: none;
 		li {
 			float: left;
 			margin-right: 1em;
