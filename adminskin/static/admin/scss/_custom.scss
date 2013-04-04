@@ -21,4 +21,14 @@ div#batch-upload {
 .reveal-modal {
 	width: 50%;
 	margin-left: -25%;
+	ul.modal-actions {
+		list-style: none;
+		li {
+			float: left;
+			margin-right: 1em;
+			a.secondary {
+				background: #CCC!important;
+			}
+		}
+	}
 }
