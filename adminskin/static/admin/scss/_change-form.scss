@@ -68,16 +68,18 @@
 				position: relative;
 				a.inline-deletelink {
 					position: absolute;
-					right: 10px;
+					left: 110%;
 					top: 9px;
 				}
 				span.delete {
 					position: absolute;
-					right: 10px;
+					left: 110%;
 					top: 5px;
+					width: 100px;
 					label {
 						color: #FFF;
 						font-size: 0.8em;
+						color: #000;
 					}
 				}
 			}
