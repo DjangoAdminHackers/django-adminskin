@@ -110,5 +110,17 @@
 			background: #FFF;
 			padding: 12px;
 		}
+		div.publish-row {
+			border-top: solid 1px #000;
+			padding-top: 10px;
+			margin-top: 10px;
+			a {
+				float: right;
+				margin: 4px 0;
+				@include button($button-background, $button-hover-background);
+				@include rounded(2px);
+				color: #FFF!important;
+			}
+		}
 	}
 }
