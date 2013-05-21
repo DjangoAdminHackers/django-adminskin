@@ -15,25 +15,24 @@ $(function ($) {
         return ((a_name < b_name) ? -1 : ((a_name > b_name) ? 1 : 0));
     }
 
-    var check_changes = function() {
+    //Use serializeArray + param instead of serialize as we need to reorder
+    //the parameters
+
+    var changed = function() {
         $('.filtered').filter('[id$=_to]').find('option').each(function(){
             $(this).attr('selected', 'selected');
         });
         var current_form = $.param($('form').serializeArray().sort(sort_by_name));
         //Ignore the MCE effects
         current_form = $.trim(unescape(current_form).replace(/\s/g, '').replace(/\+data-mce-href=".+?"/g, '').replace(/<p><br\+data-mce-bogus="1"><\/p>/g, ''));
-        if (current_form!=initial_form && !SAVING) {
+        return current_form != initial_form && !SAVING;
+
+    }
+    window.onbeforeunload = function() {
+        if (changed()) {
             return 'You have unsaved changes.';
         }
     };
-    //Use serializeArray + param instead of serialize as we need to reorder
-    //the parameters
-
-    window.onbeforeunload = function() {
-        // filter horizontal
-        check_changes();
-    };
-
     /* Move object tools next to h1 */
     $("ul.object-tools").insertAfter("#content h1");
     
@@ -69,6 +68,10 @@ $(function ($) {
         var $this = $(this);
         var modal = $this.attr('modal');
         var href = $this.attr('href');
+        if (changed()) {
+           alert("You have unsaved changes. Please save before continuing.");
+           return false;
+        }
         if (modal !== undefined) {
             $('#' + modal).foundation('reveal', 'open');
         } else {
