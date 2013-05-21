@@ -68,16 +68,18 @@
 				position: relative;
 				a.inline-deletelink {
 					position: absolute;
-					right: 10px;
+					left: 110%;
 					top: 9px;
 				}
 				span.delete {
 					position: absolute;
-					right: 10px;
+					left: 110%;
 					top: 5px;
+					width: 100px;
 					label {
 						color: #FFF;
 						font-size: 0.8em;
+						color: #000;
 					}
 				}
 			}
@@ -93,6 +95,9 @@
 					border: none;
 					text-transform: none!important;
 				}
+				select {
+					height: 10em;
+				}
 			}
 		}
 		.inline-related fieldset {
@@ -104,6 +109,18 @@
 		div.add-row {
 			background: #FFF;
 			padding: 12px;
+		}
+		div.publish-row {
+			border-top: solid 1px #000;
+			padding-top: 10px;
+			margin-top: 10px;
+			a {
+				float: right;
+				margin: 4px 0;
+				@include button($button-background, $button-hover-background);
+				@include rounded(2px);
+				color: #FFF!important;
+			}
 		}
 	}
 }
