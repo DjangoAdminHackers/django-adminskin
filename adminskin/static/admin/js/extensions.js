@@ -2,8 +2,38 @@
 
 /* Move object tools next to the changelist title */
 
-jQuery(document).ready(function ($) {
-        
+
+$(function ($) {
+        var initial_form = $.trim(unescape($.param($('form').serializeArray().sort(sort_by_name))).replace(/\s/g, ''));
+        var SAVING = false;
+        $('.submit-row').click(function() {
+            SAVING = true;
+        });
+        function sort_by_name(a, b){
+            var a_name = a.name.toLowerCase();
+            var b_name = b.name.toLowerCase();
+            return ((a_name < b_name) ? -1 : ((a_name > b_name) ? 1 : 0));
+        }
+
+        var check_changes = function() {
+            $('.filtered').filter('[id$=_to]').find('option').each(function(){
+                $(this).attr('selected', 'selected');
+            });
+            var current_form = $.param($('form').serializeArray().sort(sort_by_name));
+            //Ignore the MCE effects
+            current_form = $.trim(unescape(current_form).replace(/\s/g, '').replace(/\+data-mce-href=".+?"/g, '').replace(/<p><br\+data-mce-bogus="1"><\/p>/g, ''));
+            if (current_form!=initial_form && !SAVING) {
+                return 'You have unsaved changes.';
+            }
+        };
+        //Use serializeArray + param instead of serialize as we need to reorder
+        //the parameters
+
+        window.onbeforeunload = function() {
+            // filter horizontal
+            check_changes();
+        };
+
         /* Move object tools next to h1 */
         $("ul.object-tools").insertAfter("#content h1");
         
@@ -27,5 +57,23 @@ jQuery(document).ready(function ($) {
         
         /* Add id to search button */
         $('#changelist-search input[type="submit"]').attr('id', 'search-submit');
+        
+        $('.move_to_submit_row').insertBefore('.submit-row>input:first');
+        $('.submit-row input').removeClass('default');
+        $('.submit-row>input:first').addClass('default');
 
+        $('.submit-row-extra').insertBefore('.submit-row>input:first');
+        $('.submit-row-extra').on('click', function(event) {
+            event.preventDefault();
+            SAVING = false;
+            var $this = $(this);
+            var modal = $this.attr('modal');
+            var href = $this.attr('href');
+            if (modal !== undefined) {
+                $('#' + modal).foundation('reveal', 'open');
+            } else {
+                window.location = $(this).attr('href');
+                
+            }
+        });
 });

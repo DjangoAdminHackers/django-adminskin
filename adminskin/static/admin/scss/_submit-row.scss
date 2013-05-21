@@ -1,0 +1,35 @@
+body {
+    padding-bottom: 67px;
+}
+.reveal-modal {
+    ul.modal-actions {
+        padding-left: 0;
+        margin: 1em 0 0 0;
+        li {
+            float: left;
+            list-style: none;
+            margin-right: 5px;
+            a {
+                @include button();
+                @include rounded(2px);
+            }
+        }
+    }
+}
+div.fixed-submit-row {
+    position: fixed;
+    width: 100%;
+    top: 100%;
+    height: 67px;
+    margin-top: -67px;
+    left: 0;
+    background-color: #1a1a1a;
+    @include shadow(#1a1a1a);
+    div.submit-row {
+        height: 37px;
+        margin: 15px;
+        a, a:hover {
+            color: white !important;
+        }
+    }
+}
