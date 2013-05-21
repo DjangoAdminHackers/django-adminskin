@@ -23,7 +23,6 @@ $(function ($) {
             $(this).attr('selected', 'selected');
         });
         var current_form = $.param($('form').serializeArray().sort(sort_by_name));
-        //Ignore the MCE effects
         current_form = $.trim(unescape(current_form).replace(/\s/g, '').replace(/\+data-mce-href=".+?"/g, '').replace(/<p><br\+data-mce-bogus="1"><\/p>/g, ''));
         return current_form != initial_form && !SAVING;
 
@@ -35,7 +34,12 @@ $(function ($) {
     };
     /* Move object tools next to h1 */
     $("ul.object-tools").insertAfter("#content h1");
-    
+    $("ul.object-tools a").on('click', function() {
+        if (changed()) {
+           alert("You have unsaved changes. Please save before continuing.");
+           return false;
+        }
+    });
     /* Add show/hide filters toggle link */
     $('#changelist-search').after('<a id="toggle" class="hide">Hide filters</a>');
     
