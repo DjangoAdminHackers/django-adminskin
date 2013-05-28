@@ -1,0 +1,8 @@
+{% extends 'admin:admin/change_list.html' %}
+{% load i18n admin_static admin_list %}
+{% load admin_urls %}
+{% block pagination %}
+    <div class="fixed-submit-row">
+        {% pagination cl %}
+    </div>
+{% endblock %}
