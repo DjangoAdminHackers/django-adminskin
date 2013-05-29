@@ -4,9 +4,38 @@
 
 
 $(function ($) {
-    var initial_form = $.trim(unescape($.param($('form').serializeArray().sort(sort_by_name))).replace(/\s/g, ''));
+
+    var get_select_value = function($select) {
+        if (!$select.hasClass('filtered')) {
+            if($select.val() == null) {
+                return [];
+            } else {
+                return $select.val();
+            }
+        }
+        var vals = [];
+        $.each($select.find('option'), function() {
+            vals.push($(this).val());
+        });
+        return vals;
+    };
+
+    var $form = $('form');
+    var orig_elements = [];
+    var orig_vals = {};
+    $form.find('input, select, textarea').each(function() {
+        var $this = $(this);
+        if (!$this.attr('name'))
+            return;
+        if ($this.hasClass('action-select'))
+            return;
+        if ($this.attr('type') == 'submit')
+            return;
+        orig_elements.push($this.attr('name'));
+        orig_vals[$this.attr('name')] = get_select_value($this);
+    });
     var SAVING = false;
-    $('.submit-row').click(function() {
+    $('.submit-row, input[name=_save]').on('click', function() {
         SAVING = true;
     });
     function sort_by_name(a, b){
@@ -15,18 +44,19 @@ $(function ($) {
         return ((a_name < b_name) ? -1 : ((a_name > b_name) ? 1 : 0));
     }
 
-    //Use serializeArray + param instead of serialize as we need to reorder
-    //the parameters
 
     var changed = function() {
-        $('.filtered').filter('[id$=_to]').find('option').each(function(){
-            $(this).attr('selected', 'selected');
+        var clean = true;
+        $.each(orig_elements, function() {
+            var $this = $form.find('[name='+this+']');
+            if (!_.isEqual(orig_vals[$this.attr('name')], get_select_value($this))) {
+                clean = false;
+                return;
+            }
         });
-        var current_form = $.param($('form').serializeArray().sort(sort_by_name));
-        current_form = $.trim(unescape(current_form).replace(/\s/g, '').replace(/\+data-mce-href=".+?"/g, '').replace(/<p><br\+data-mce-bogus="1"><\/p>/g, ''));
-        return current_form != initial_form && !SAVING;
+        return !clean && !SAVING;
 
-    }
+    };
     window.onbeforeunload = function() {
         if (changed()) {
             return 'You have unsaved changes.';
