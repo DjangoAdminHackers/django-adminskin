@@ -25,6 +25,8 @@ $(function ($) {
     var orig_vals = {};
     $form.find('input, select, textarea').each(function() {
         var $this = $(this);
+        if ($this.closest('#djDebug'))
+            return;
         if (!$this.attr('name'))
             return;
         if ($this.hasClass('action-select'))
