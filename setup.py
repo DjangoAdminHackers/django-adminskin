@@ -9,7 +9,7 @@ import sys
 
 name = 'django-adminskin'
 package = 'adminskin'
-description = ''
+description = 'Custom skin for the Django admin'
 url = 'http://github.com/DjangoAdminHackers/django-adminskin.git'
 author = 'Links Creative'
 author_email = 'info@linkscreative.co.uk'
